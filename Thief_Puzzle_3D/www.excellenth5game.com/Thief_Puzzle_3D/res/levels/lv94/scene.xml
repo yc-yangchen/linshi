@@ -1,0 +1,104 @@
+<root>
+	<anims win2="t_94_2_win" win1="t_94_1_win" lose2="t_94_2_lose" lose1_2="t_94_1_lose" lose1="t_94_1_lose2"/>
+	<scene>
+		<object name="lv94">
+			<object name="TrangTri">
+				<object name="bg">
+					<transform y="0.7809" sy="0.906524" sx="60.297497"/>
+					<sprite units="190" frame="bg_duong_pho"/>
+				</object>
+				<object name="bg (1)">
+					<transform y="-2.34" x="-0.03"/>
+					<sprite units="190" frame="shop"/>
+				</object>
+				<object name="bg (2)">
+					<transform y="-0.7" x="1.14"/>
+					<sprite units="190" frame="xe"/>
+				</object>
+			</object>
+			<object opponent="2" name="Ball">
+				<transform y="0.091111" x="-2.455688" s="0.787309"/>
+				<sprite units="190" off="1" frame="trap_bong"/>
+				<circle radius="0.144737" centerY="0" centerX="0"/>
+			</object>
+			<object name="Trap">
+				<transform y="0.8" x="-2.568" s="0.660661"/>
+				<sprite units="190" frame="trap_may_ban_bong"/>
+			</object>
+			<object offWin="1" name="target">
+				<transform y="-1.217" x="1.808"/>
+				<sprite units="190" frame="hop_xe_pizza"/>
+				<circle radius="0.29" centerY="0" centerX="0"/>
+			</object>
+			<object name="Nv">
+				<object name="NVC">
+					<transform y="2.64" x="-1.76" s="0.958035"/>
+					<skel type="thief" offWin="1" nv="1" loop="1" animName="t_94_1_be"/>
+				</object>
+				<object opponent="1" name="NVP">
+					<transform y="-0.85" x="-0.68" s="0.580145"/>
+					<skel type="thief" offWin="1" offClose="1" nv="2" loop="1" animName="t_94_2_be"/>
+					<capsule radius="0.279561" height="2.481269" centerY="-1.231606" centerX="0.042588" axis="y"/>
+				</object>
+				<object name="Over">
+					<object name="NVP (1)">
+						<transform y="2.26" x="-0.32" s="1.107259"/>
+						<skel type="thief" showOver="1" loop="1" hide="1" animName="t_94_2_lose"/>
+					</object>
+				</object>
+				<object name="Win">
+					<object name="NVP (1)">
+						<transform y="1.41" x="-1.4" s="0.865544"/>
+						<skel type="thief" showWin="1" loop="1" hide="1" animName="t_94_2_win"/>
+					</object>
+					<object name="NVP (2)">
+						<transform y="2.64" x="0.397" s="0.955632"/>
+						<skel type="thief" showWin="1" loop="1" hide="1" animName="t_94_1_win"/>
+						<object showWin="1" name="happy" hide="1">
+							<transform y="-2.09" x="-0.2" s="1.015962"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="Rope"/>
+			<object name="Hand">
+				<transform y="1.877" x="-1.04" s="0.767483" r="1.317025"/>
+				<object rope="1" name="SpriteHand">
+					<transform x="-0.262" r="-1.310917"/>
+					<sprite units="190" pivotY="0.090205" pivotX="0.681032" frame="hand_open" flipX="1"/>
+				</object>
+				<object name="Cotay">
+					<transform x="-0.262"/>
+				</object>
+				<object name="Pos">
+					<transform y="-0.022" x="0.101"/>
+				</object>
+			</object>
+			<object rope="0" name="Start]">
+				<transform y="1.353" x="-1.401"/>
+			</object>
+			<object name="SttTarget">
+				<transform y="1.05" x="-1.548"/>
+				<object name="bong_thoai">
+					<transform s="0.737857"/>
+					<sprite units="200" pivotY="0.986423" pivotX="0.817453" frame="bubble"/>
+					<object name="target (1)">
+						<transform y="-0.639" x="-0.431" s="0.934689"/>
+						<sprite units="190" frame="hop_xe_pizza"/>
+					</object>
+				</object>
+			</object>
+			<object name="ObjectHint (3)">
+				<object name="New Game Object">
+					<transform y="1.353" x="-1.401"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-1.217" x="1.808"/>
+				</object>
+			</object>
+			<object name="View">
+				<transform y="-0.03" x="-0.29" sy="5.525776" sx="5.484375"/>
+			</object>
+		</object>
+	</scene>
+</root>

@@ -1,0 +1,164 @@
+<root>
+	<anims win2="t_179_2_win" win1="t_179_1_win" lose2="t_179_2_lose" lose1="t_179_1_lose"/>
+	<scene>
+		<object name="lv179">
+			<object name="TrangTri">
+				<transform y="-0.81"/>
+				<object name="bg_san_nha (2)">
+					<transform y="1.01" x="-5.9"/>
+					<sprite units="190" frame="bg"/>
+				</object>
+				<object name="bg_san_nha (3)">
+					<transform y="1.01" x="5.66"/>
+					<sprite units="190" frame="bg" flipX="1"/>
+				</object>
+				<object name="bg_san_nha (1)">
+					<transform y="1.01"/>
+					<sprite units="190" frame="bg"/>
+				</object>
+				<object name="vach_ngan (1)">
+					<transform y="1.0095" x="2.93" sy="1.155982"/>
+					<sprite units="190" frame="vach_ngan"/>
+				</object>
+				<object name="vach_ngan">
+					<transform y="1.0095" x="-2.97" sy="1.155982"/>
+					<sprite units="190" frame="vach_ngan"/>
+				</object>
+				<object name="voi_nuoc">
+					<transform y="0.453" x="-1.85"/>
+					<sprite units="190" frame="voi_nuoc"/>
+				</object>
+				<object name="GameObject">
+					<transform y="0.43"/>
+					<object name="voi_nuoc_keo_dai 1 (1)">
+						<transform y="0.8" x="0.4149" sy="0.991304" sx="24.268126"/>
+						<sprite units="190" frame="voi_nuoc_keo_dai 1"/>
+					</object>
+					<object name="voi_nuoc_keo_dai 1 (1)">
+						<transform y="0.8" x="-1.9791" sy="0.991304"/>
+						<sprite units="190" frame="ong_nuoc"/>
+					</object>
+					<object name="voi_nuoc_keo_dai 1 (2)">
+						<transform y="0.8" x="-1.3991" sy="0.991304"/>
+						<sprite units="190" frame="ong_nuoc"/>
+					</object>
+					<object name="voi_nuoc_keo_dai 1 (3)">
+						<transform y="0.8" x="-0.8761" sy="0.991304"/>
+						<sprite units="190" frame="ong_nuoc"/>
+					</object>
+					<object name="voi_nuoc_keo_dai 1 (4)">
+						<transform y="0.8" x="-0.3531" sy="0.991304"/>
+						<sprite units="190" frame="ong_nuoc"/>
+					</object>
+					<object name="voi_nuoc_keo_dai 1 (5)">
+						<transform y="0.8" x="0.2449" sy="0.991304"/>
+						<sprite units="190" frame="ong_nuoc"/>
+					</object>
+					<object name="voi_nuoc_keo_dai 1 (6)">
+						<transform y="0.8" x="0.7799" sy="0.991304"/>
+						<sprite units="190" frame="ong_nuoc"/>
+					</object>
+					<object name="voi_nuoc_keo_dai 1 (7)">
+						<transform y="0.8" x="1.4289" sy="0.991304"/>
+						<sprite units="190" frame="ong_nuoc"/>
+					</object>
+					<object name="voi_nuoc_keo_dai 1 (8)">
+						<transform y="0.8" x="1.9579" sy="0.991304"/>
+						<sprite units="190" frame="ong_nuoc"/>
+					</object>
+					<object name="voi_nuoc_keo_dai 1 (9)">
+						<transform y="0.8" x="2.7139" sy="0.991304"/>
+						<sprite units="190" frame="ong_nuoc"/>
+					</object>
+				</object>
+			</object>
+			<object name="bg_canh_cua" hook="1">
+				<transform y="0.43" x="-0.12"/>
+				<sprite units="190" frame="vach_ngan"/>
+				<object name="GameObject">
+					<transform sy="4.683447" sx="0.242104"/>
+					<box/>
+				</object>
+			</object>
+			<object offWin="1" name="target">
+				<transform y="0.28" x="2.49"/>
+				<box extentY="0.247368" extentX="0.121053" centerY="0" centerX="0"/>
+			</object>
+			<object offWin="1" name="Target1">
+				<transform y="0.29" x="2.49" r="1.570796"/>
+				<sprite units="190" frame="van_van"/>
+			</object>
+			<object showWin="1" name="Target2">
+				<transform y="0.441" x="2.339"/>
+				<sprite units="190" hide="1" frame="van_van"/>
+			</object>
+			<object name="Rope"/>
+			<object name="Hand">
+				<transform y="0.961" x="-0.8" s="0.926211" r="1.462586"/>
+				<object name="SpriteHand">
+					<transform x="-0.262" r="-1.334828"/>
+					<sprite units="190" pivotY="0.090205" pivotX="0.681032" frame="hand_open" flipX="1"/>
+				</object>
+				<object rope="1" name="Cotay">
+					<transform x="-0.262"/>
+				</object>
+				<object name="Pos">
+					<transform y="-0.022" x="0.101"/>
+				</object>
+			</object>
+			<object name="Nv">
+				<transform y="-0.81"/>
+				<object name="NvC">
+					<transform y="3.139" x="-1.46" s="1.158856"/>
+					<skel type="thief" nv="1" loop="1" animName="t_179_1_be"/>
+					<object name="voi_nuoc (1)">
+						<transform y="-2.32902" x="0.163955" s="0.86292"/>
+						<sprite units="190" show="win" frame="nuoc"/>
+					</object>
+					<object showWin="1" name="happy (1)" hide="1">
+						<transform y="-2.216" x="-0.316" s="0.894255"/>
+					</object>
+				</object>
+				<object opponent="1" name="NVP">
+					<transform y="3.136" x="1.39" s="1.199402"/>
+					<skel type="thief" nv="2" loop="1" animName="t_179_2_be"/>
+					<capsule radius="0.316461" height="2.006909" centerY="-0.945486" centerX="-0.110562" axis="y"/>
+					<object name="happy" delete="1">
+						<transform y="-1.783508" x="-0.585518" s="0.864026"/>
+					</object>
+				</object>
+			</object>
+			<object rope="0" name="Start]">
+				<transform y="0.336" x="-1.238"/>
+			</object>
+			<object name="SttTarget">
+				<transform y="-0.18" x="-1.61"/>
+				<object name="bong_thoai">
+					<transform s="0.9"/>
+					<sprite units="200" pivotY="0.986423" pivotX="0.817453" frame="bubble"/>
+					<object name="target (1)">
+						<transform y="-0.649" x="-0.422" s="0.88107" r="1.570796"/>
+						<sprite units="190" frame="van_van"/>
+					</object>
+				</object>
+			</object>
+			<object name="ObjectHint (1)">
+				<object name="New Game Object">
+					<transform y="0.28" x="2.49"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-1.912724" x="0.001053"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-1.912717" x="-0.241167"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="0.336" x="-1.238"/>
+				</object>
+			</object>
+			<object name="View">
+				<transform y="0.14" x="-0.02" sy="5.134952" sx="5.55"/>
+			</object>
+		</object>
+	</scene>
+</root>

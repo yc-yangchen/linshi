@@ -1,0 +1,154 @@
+<root>
+	<anims/>
+	<scene>
+		<object name="lv269">
+			<object name="TrangTri">
+				<object name="BG">
+					<transform y="0.153" s="0.538184"/>
+					<sprite units="100" frame="bg"/>
+				</object>
+				<object name="BG (1)">
+					<transform y="0.153" x="-15.06" sy="0.538184" sx="2.265817"/>
+					<sprite units="100" frame="bg"/>
+				</object>
+				<object name="BG (2)">
+					<transform y="0.153" x="15.97" sy="0.538184" sx="2.435754"/>
+					<sprite units="100" frame="bg"/>
+				</object>
+			</object>
+			<object name="Nv">
+				<object name="NVC">
+					<transform y="3.27" x="0.923" sy="1.027435" sx="1.023877"/>
+					<skel type="thief" offWin="1" offClose="1" nv="1" loop="1" animName="t_269_1_be"/>
+				</object>
+				<object opponent="1" name="NVP">
+					<transform y="-0.165" x="-0.989" s="0.786031"/>
+					<skel type="thief" offWin="1" offClose="1" nv="2" loop="1" animName="t_269_2_be"/>
+					<capsule radius="0.287053" height="0.599889" centerY="-2.177836" centerX="-0.175846" axis="y"/>
+					<object name="happy" delete="1">
+						<transform y="-2.312" x="-0.638"/>
+					</object>
+				</object>
+				<object name="NVC_Win">
+					<transform y="3.41" x="1.74" sy="1.09496" sx="1.099631"/>
+					<skel type="thief" showWin="1" loop="1" hide="1" animName="t_269_1_win"/>
+					<object showWin="1" name="happy (1)" hide="1">
+						<transform y="-2.095" x="-0.169"/>
+					</object>
+				</object>
+				<object name="NVP_Win">
+					<transform y="-0.101" x="-1.12" sy="0.884695" sx="0.865867"/>
+					<skel type="thief" showWin="1" loop="1" hide="1" animName="t_269_2_win"/>
+				</object>
+				<object name="NVC_Lose">
+					<transform y="3.319" x="0.806" sy="1.115462" sx="1.126521"/>
+					<skel type="thief" showOver="1" loop="1" hide="1" animName="t_269_1_lose"/>
+				</object>
+				<object name="NVP_Lose">
+					<transform y="-0.154" x="-1.121" s="0.831843"/>
+					<skel type="thief" showOver="1" loop="1" hide="1" animName="t_269_2_lose"/>
+				</object>
+			</object>
+			<object offWin="1" offClose="1" name="target">
+				<transform y="-1.538" x="-0.819" sy="0.352848" sx="0.354046" r="-0.397935"/>
+				<capsule radius="0.295533" height="1.094313" centerY="-0.007646" centerX="0.032108" axis="y"/>
+				<sprite units="100" frame="cay_kem"/>
+			</object>
+			<object name="Kem_win">
+				<transform y="1.57" x="2.26" sy="0.352848" sx="0.354046" r="-0.397935"/>
+				<sprite units="100" show="win" frame="cay_kem"/>
+			</object>
+			<object name="Kem_lose">
+				<transform y="-1.172" x="-0.698" sy="0.352848" sx="0.354046" r="1.084548"/>
+				<sprite units="100" show="over" frame="cay_kem"/>
+			</object>
+			<object name="than_may_quay">
+				<transform y="0.361" x="-2.629" s="0.74671"/>
+				<sprite units="190" frame="than_may_quay"/>
+				<object name="Camera">
+					<transform y="0.004" x="0.159" r="0.35308"/>
+					<sprite units="190" pivotY="0.841496" pivotX="0.323361" frame="may_quay"/>
+					<object opponent="1" name="vung_quet">
+						<transform y="-0.56" x="2.49" r="-2.488839"/>
+						<sprite units="190" frame="camera_quet"/>
+						<object opponent="1" name="GameObject">
+							<transform y="0.25" x="-0.68" r="0.919789"/>
+							<capsule radius="0.077847" height="2.756825" centerY="-0.01156" centerX="0.010675" axis="x"/>
+						</object>
+						<object opponent="1" name="GameObject (1)">
+							<transform y="-0.1" x="1.62" r="-1.158899"/>
+							<capsule radius="0.07504" height="2.608245" centerY="-0.692337" centerX="-0.619186" axis="x"/>
+						</object>
+						<object opponent="1" name="GameObject (2)">
+							<transform y="-2.07" x="0.04" r="-0.172788"/>
+							<capsule radius="0.077584" height="2.588691" centerY="1.020802" centerX="-0.306035" axis="x"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="than_may_quay (1)">
+				<transform y="-1.28" x="2.623" sy="0.74671" sx="-0.74671"/>
+				<sprite units="190" frame="than_may_quay"/>
+				<object name="Camera">
+					<transform y="0.004" x="0.159" r="0.558505"/>
+					<sprite units="190" pivotY="0.841496" pivotX="0.323361" frame="may_quay"/>
+					<object opponent="1" name="vung_quet">
+						<transform y="-0.48" x="2.46" r="-2.488839"/>
+						<sprite units="190" frame="camera_quet"/>
+						<object opponent="1" name="GameObject">
+							<transform y="0.21" x="-0.62" r="0.919789"/>
+							<capsule radius="0.086725" height="2.445611" centerY="0" centerX="-0.05552" axis="x"/>
+						</object>
+						<object opponent="1" name="GameObject (1)">
+							<transform y="-0.401" x="0.939" r="-1.158899"/>
+							<capsule radius="0.086725" height="2.177762" centerY="0.000154" centerX="-0.097523" axis="x"/>
+						</object>
+						<object opponent="1" name="GameObject (2)">
+							<transform y="-1.056" x="0.215" r="-0.172788"/>
+							<capsule radius="0.086725" height="2.193947" centerY="0.000346" centerX="-0.258215" axis="x"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="Rope"/>
+			<object name="Hand">
+				<transform y="1.993" x="0.47" s="0.71586" r="2.388658"/>
+				<object name="SpriteHand">
+					<transform x="-0.262" r="-1.839577"/>
+					<sprite units="190" pivotY="0.090205" pivotX="0.681032" frame="hand_open"/>
+				</object>
+				<object rope="1" name="Cotay">
+					<transform x="-0.262"/>
+				</object>
+				<object name="Pos">
+					<transform y="-0.02" x="0.06"/>
+				</object>
+			</object>
+			<object rope="0" name="Start" delete="1">
+				<transform y="1.432" x="0.913"/>
+			</object>
+			<object name="SttTarget">
+				<transform y="0.862" x="1.248"/>
+				<object name="bong_thoai">
+					<transform s="0.72058"/>
+					<sprite units="200" pivotY="0.986423" pivotX="0.817453" frame="bubble" flipX="1"/>
+					<object name="target (1)">
+						<transform y="-0.615" x="0.403" s="0.439502"/>
+						<sprite units="100" frame="cay_kem"/>
+					</object>
+				</object>
+			</object>
+			<object name="ObjectHint">
+				<object name="New Game Object">
+					<transform y="1.44" x="0.93"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-1.59" x="-0.89"/>
+				</object>
+			</object>
+			<object name="View">
+				<transform y="0.1" sy="6.378777" sx="5.625"/>
+			</object>
+		</object>
+	</scene>
+</root>

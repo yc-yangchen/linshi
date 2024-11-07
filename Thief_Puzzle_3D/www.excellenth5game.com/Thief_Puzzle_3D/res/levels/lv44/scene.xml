@@ -1,0 +1,156 @@
+<root>
+	<anims win3="t_44_1_win" win2="t_44_2_win" win1="t_44_1_win" lose3="t_44_1_lose" lose2="t_44_2_lose" lose1="t_44_1_lose"/>
+	<scene>
+		<object name="lv44">
+			<object name="TrangTri">
+				<object name="bg_thuyen">
+					<transform y="-0.925" x="-1.18"/>
+					<sprite units="190" frame="quay_ba"/>
+				</object>
+				<object name="ghe">
+					<transform y="0.504418" x="0.01"/>
+					<sprite units="190" frame="ghe"/>
+				</object>
+				<object name="ghe (1)">
+					<transform y="-0.71" x="2.24"/>
+					<sprite units="190" frame="chau_cay"/>
+				</object>
+				<object name="bg_thuyen (1)">
+					<transform y="-0.925" x="-1.5"/>
+					<sprite units="190" frame="quay_ba" flipX="1"/>
+				</object>
+			</object>
+			<object name="thanh_ngang" hook="1">
+				<transform y="-3.232" x="-0.05"/>
+				<sprite units="190" frame="thanh_ngang"/>
+				<object name="GameObject (3)">
+					<transform y="0.665" x="0.052" sy="0.426764" sx="1.634292"/>
+					<box/>
+				</object>
+				<object name="den">
+					<transform y="0.502" x="-0.699537"/>
+					<sprite units="190" frame="den"/>
+				</object>
+				<object name="den (1)">
+					<transform y="0.502" x="0.046"/>
+					<sprite units="190" frame="den"/>
+				</object>
+				<object name="den (2)">
+					<transform y="0.502" x="0.796"/>
+					<sprite units="190" frame="den"/>
+				</object>
+			</object>
+			<object name="Rope"/>
+			<object name="Nv">
+				<transform y="0.168"/>
+				<object name="NvC">
+					<transform y="1.116" x="-1.8" s="1.32479"/>
+					<skel type="thief" nv="1" loop="1" animName="t_44_1_be"/>
+					<object name="target (1)">
+						<transform y="-1.256" x="-0.276" s="0.546268"/>
+						<sprite units="190" show="win" frame="bo_toc_gia"/>
+					</object>
+					<object showWin="1" name="happy" hide="1">
+						<transform y="-2.40806" x="-0.347225" s="0.754837"/>
+					</object>
+				</object>
+				<object opponent="1" name="NVN">
+					<transform y="0.82" x="-0.082" s="1.981347"/>
+					<skel type="girl" nv="3" loop="1" animName="t_44_1_be"/>
+					<capsule radius="0.17014" height="0.897029" centerY="-0.548325" centerX="0.1564" axis="y"/>
+					<circle radius="0.198481" centerY="-1.207498" centerX="0.129806"/>
+				</object>
+				<object opponent="1" name="NVP">
+					<transform y="2.86" x="2.11" s="1.399387"/>
+					<skel type="thief" offClose="1" nv="2" loop="1" animName="t_44_2_be"/>
+					<capsule radius="0.277718" height="2.001829" centerY="-0.977595" centerX="-0.019288" axis="y"/>
+					<object name="love" delete="1">
+						<transform y="-2.288859" x="0.30299" s="0.714599"/>
+					</object>
+				</object>
+				<object name="cai_dia">
+					<transform y="0.66" x="0.75"/>
+					<sprite units="190" frame="cai_dia"/>
+					<object name="ly_ruou">
+						<transform y="-0.293546" x="-0.0053"/>
+						<sprite units="190" frame="ly_ruou"/>
+					</object>
+				</object>
+				<object opponent="1" name="NVP (1)" delete="1">
+					<transform y="2.939601" x="0.009724" s="1.399387"/>
+					<skel type="thief" loop="1" animName="t_44_3_be"/>
+					<circle radius="0.26289" centerY="-2.086596" centerX="-0.176825"/>
+					<capsule radius="0.122686" height="1.721902" centerY="-0.962376" centerX="-0.040505" axis="y"/>
+				</object>
+				<object name="Win">
+					<object name="NVP (2)">
+						<transform y="2.949" x="-0.236" s="1.399387"/>
+						<skel type="thief" showWin="1" loop="1" hide="1" animName="t_44_3_win"/>
+					</object>
+				</object>
+				<object name="Over">
+					<object name="NVP (2)">
+						<transform y="3.039" x="-0.129" s="1.399387"/>
+						<skel type="thief" showOver="1" loop="1" hide="1" animName="t_44_3_lose"/>
+					</object>
+					<object name="NVP (2)">
+						<transform y="-0.62" x="-0.39" s="1.399387"/>
+						<skel type="thief" showOver="1" loop="1" hide="1" animName="t_44_2_lose"/>
+					</object>
+				</object>
+			</object>
+			<object name="target" delete="1">
+				<transform y="-0.005" x="2.084" s="1.050813"/>
+				<sprite units="190" frame="bo_toc_gia"/>
+				<box extentY="0.144218" extentX="0.364903" centerY="-0.091606" centerX="-0.00502"/>
+			</object>
+			<object name="Hand">
+				<transform y="-0.189" x="-1.444" s="1.035675" r="1.462586"/>
+				<object name="SpriteHand">
+					<transform x="-0.262" r="1.919862"/>
+					<sprite units="190" pivotY="0.090205" pivotX="0.681032" frame="hand_open" flipY="1"/>
+				</object>
+				<object rope="1" name="Cotay">
+					<transform x="-0.262"/>
+				</object>
+				<object name="Pos">
+					<transform y="-0.022" x="0.101"/>
+				</object>
+			</object>
+			<object rope="0" name="Start]">
+				<transform y="-1.082" x="-1.745"/>
+			</object>
+			<object name="SttTarget">
+				<transform y="-1.968" x="-1.799"/>
+				<object name="bong_thoai">
+					<transform sy="0.904447" sx="-0.904447"/>
+					<sprite units="200" pivotY="0.986423" pivotX="0.817453" frame="bubble" flipX="1"/>
+					<object name="target (1)">
+						<transform y="-0.649" x="0.41" s="0.81675"/>
+						<sprite units="190" frame="bo_toc_gia"/>
+					</object>
+				</object>
+			</object>
+			<object name="ObjectHint">
+				<object name="New Game Object">
+					<transform y="-0.173" x="2.084"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-2.839" x="0.818"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-2.839" x="-0.809"/>
+				</object>
+				<object name="New Game Object (1)">
+					<transform y="-1.008" x="-1.76"/>
+				</object>
+			</object>
+			<object name="New Game Object">
+				<transform y="-1.008" x="-1.76"/>
+			</object>
+			<object name="View">
+				<transform y="-0.22" x="-0.06" sy="7.429305" sx="6.375"/>
+			</object>
+		</object>
+	</scene>
+</root>

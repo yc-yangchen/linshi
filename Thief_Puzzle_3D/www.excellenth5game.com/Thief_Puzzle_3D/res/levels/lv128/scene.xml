@@ -1,0 +1,206 @@
+<root>
+	<anims/>
+	<scene>
+		<object name="lv128">
+			<object name="TrangTri">
+				<object name="bg (1)">
+					<transform y="0.11" x="0.014" sy="1.2125"/>
+					<sprite units="100" frame="bg_full"/>
+				</object>
+				<object name="TrucThang">
+					<transform y="-1.5871" x="1.2406" s="0.523894"/>
+					<sprite units="100" frame="truc_thang"/>
+				</object>
+				<object name="ladder">
+					<transform y="-0.774" x="1.684" s="0.516959"/>
+					<sprite units="100" frame="thang"/>
+				</object>
+				<object offWin="1" offClose="1" name="VanTruot">
+					<transform y="1.11" x="-1.725" s="0.516959" r="1.890192"/>
+					<sprite units="100" frame="van_truot"/>
+				</object>
+				<object offWin="1" offClose="1" name="VanTruot (1)">
+					<transform y="1.709" x="-0.964" s="0.516959" r="0.829031"/>
+					<sprite units="100" frame="van_truot"/>
+				</object>
+				<object offWin="1" offClose="1" name="GiayTruot">
+					<transform y="1.606" x="-0.904" s="0.516959" r="0.829031"/>
+					<sprite units="100" frame="giay_truot"/>
+				</object>
+				<object offWin="1" offClose="1" name="GiayTruot (1)">
+					<transform y="1.1" x="-1.599" s="0.516959" r="1.88321"/>
+					<sprite units="100" frame="giay_truot"/>
+				</object>
+				<object name="Giay_Win">
+					<transform y="0.492" x="1.633" s="0.313106" r="1.101303"/>
+					<sprite units="100" show="win" frame="giay_truot"/>
+				</object>
+				<object name="Giay_Win (1)">
+					<transform y="0.6212" x="1.7899" s="0.317233" r="0.010472"/>
+					<sprite units="100" show="win" frame="giay_truot"/>
+				</object>
+				<object name="VanTruot_Win">
+					<transform y="0.538" x="1.584" s="0.312945" r="1.108284"/>
+					<sprite units="100" show="win" frame="van_truot"/>
+				</object>
+				<object name="VanTruot_Win (1)">
+					<transform y="0.691" x="1.814" s="0.312945" r="0.029671"/>
+					<sprite units="100" show="win" frame="van_truot"/>
+				</object>
+				<object name="TuyetLo_Close">
+					<transform y="2.497" x="1.154" s="0.521666" r="0.152542"/>
+					<sprite units="100" show="over" frame="qua_cau_tuyet_1"/>
+				</object>
+				<object name="TuyetLo_Close">
+					<transform y="1.4" x="0.48" s="0.725798" r="0.152542"/>
+					<sprite units="100" show="over" frame="qua_cau_tuyet_1"/>
+				</object>
+				<object name="Kinh_Close">
+					<transform y="2.117" x="0.574" sy="-0.499141" sx="0.499141" r="-2.726205"/>
+					<sprite units="100" show="over" frame="item_kinh"/>
+				</object>
+				<object name="Giay_Close">
+					<transform y="1.791" x="1.381" s="0.513718" r="-2.834415"/>
+					<sprite units="100" show="over" frame="giay_truot"/>
+				</object>
+				<object name="Giay_Close (1)">
+					<transform y="1.86" x="2.235" s="0.513718" r="-1.769764"/>
+					<sprite units="100" show="over" frame="giay_truot"/>
+				</object>
+				<object name="VanTruot_Close">
+					<transform y="1.672" x="1.369" s="0.519451" r="-2.843142"/>
+					<sprite units="100" show="over" frame="van_truot"/>
+				</object>
+				<object name="VanTruot_Close">
+					<transform y="1.8" x="2.338" s="0.519164" r="-1.792802"/>
+					<sprite units="100" show="over" frame="van_truot"/>
+				</object>
+				<object name="bg (2)">
+					<transform y="0.11" x="-10.14" sy="1.2125"/>
+					<sprite units="100" frame="bg_full" flipX="1"/>
+				</object>
+				<object name="bg (3)">
+					<transform y="0.11" x="10.23" sy="1.2125"/>
+					<sprite units="100" frame="bg_full" flipX="1"/>
+				</object>
+			</object>
+			<object name="Mask">
+				<transform y="0.13" sy="5.94" sx="12.55"/>
+				<mask width="4" units="4" height="4" frame="Square"/>
+				<object name="Ball">
+					<transform y="-0.021886" sy="0.16835" sx="0.079681"/>
+					<object opponent="1" name="object" delete="1">
+						<transform y="-3.89" x="-3.92" s="0.347073"/>
+						<circle radius="0.668421" centerY="0" centerX="0"/>
+						<object name="vet_do">
+							<transform y="-0.390701" x="-0.839019" s="0.844891" r="1.83661"/>
+							<sprite units="190" frame="vet_do" flipY="1"/>
+						</object>
+						<object name="qua_tuyet">
+							<sprite units="190" frame="qua_tuyet"/>
+						</object>
+					</object>
+					<object name="end">
+						<transform y="3.93" x="3.99"/>
+					</object>
+				</object>
+				<object name="Ball" delete="1">
+					<transform y="-0.695286" x="-0.359363" sy="0.085224" sx="0.040337"/>
+					<object opponent="1" name="object">
+						<circle radius="0.668421" centerY="0" centerX="0.12"/>
+						<object name="vet_do">
+							<transform y="-0.02" x="-0.86" s="0.916559" r="1.83661"/>
+							<sprite units="190" frame="vet_do" flipY="1"/>
+						</object>
+						<object name="qua_tuyet">
+							<transform x="0.119999"/>
+							<sprite units="190" frame="qua_tuyet"/>
+						</object>
+					</object>
+					<object name="end">
+						<transform y="15.87" x="16.78" s="1.975376"/>
+					</object>
+				</object>
+			</object>
+			<object name="Rope"/>
+			<object name="Hand">
+				<transform y="1.082" x="-0.279" s="0.689755" r="0.74735"/>
+				<object name="SpriteHand">
+					<transform y="-0.015" x="-0.271" r="1.919862"/>
+					<sprite units="190" pivotY="0.090205" pivotX="0.681032" frame="hand_open" flipY="1"/>
+				</object>
+				<object rope="1" name="Cotay">
+					<transform y="-0.015" x="-0.271" r="1.874484"/>
+				</object>
+				<object name="Pos">
+					<transform y="-0.022" x="0.101"/>
+				</object>
+			</object>
+			<object name="Nv">
+				<object name="NvC">
+					<transform y="1.67" x="-0.55" s="0.900429" r="-0.15324"/>
+					<skel type="thief" offWin="1" offClose="1" loop="1" animName="t_128_1_be"/>
+				</object>
+				<object name="NvC_Win">
+					<transform y="0.511" x="1.77" s="0.589066"/>
+					<skel type="thief" showWin="1" loop="1" hide="1" animName="t_128_1_win"/>
+					<object showWin="1" name="happy" hide="1">
+						<transform y="-2.112205" x="-0.447687" s="1.75925"/>
+					</object>
+				</object>
+				<object name="NvC_Close">
+					<transform y="2.856" x="1.561" s="1.193129"/>
+					<skel type="thief" showOver="1" loop="1" hide="1" animName="t_128_1_lose"/>
+				</object>
+			</object>
+			<object offWin="1" offClose="1" name="GayTruotTuyet">
+				<transform y="0.732" x="-0.998" s="0.516958" r="2.313085"/>
+				<sprite units="100" frame="gay"/>
+			</object>
+			<object name="GayTruotTuyet_Close">
+				<transform y="3.085" x="1.911" sy="0.515409" sx="0.524193" r="-1.907645"/>
+				<sprite units="100" show="over" frame="gay"/>
+			</object>
+			<object name="GayTruotTuyet_Win">
+				<transform y="3.045" x="1.994" s="0.450836" r="-1.907645"/>
+				<sprite units="100" show="win" frame="gay"/>
+			</object>
+			<object offWin="1" offClose="1" name="Kinh">
+				<transform y="0.034" x="-0.329" sy="-0.516959" sx="0.516959" r="-2.726205"/>
+				<sprite units="100" frame="item_kinh"/>
+			</object>
+			<object name="Kinh_Win">
+				<transform y="2.113" x="1.726" sy="-0.40952" sx="0.40952" r="-2.726205"/>
+				<sprite units="100" show="win" frame="item_kinh"/>
+			</object>
+			<object rope="0" name="Start" delete="1">
+				<transform y="0.404" x="-0.421"/>
+			</object>
+			<object name="ObjectHint">
+				<object name="New Game Object">
+					<transform y="-0.89" x="1.7"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="0.408" x="-0.422"/>
+				</object>
+			</object>
+			<object name="SttTarget">
+				<transform y="-0.338" x="-0.477"/>
+				<object name="bong_thoai">
+					<sprite units="200" pivotY="0.986423" pivotX="0.817453" frame="bubble"/>
+					<object name="target (1)">
+						<transform y="-0.625" x="-0.42" s="0.268645"/>
+						<sprite units="100" frame="thang"/>
+					</object>
+				</object>
+			</object>
+			<object offWin="1" name="target">
+				<transform y="-0.774" x="1.684" s="0.516959"/>
+				<box extentY="0.918446" extentX="0.295007" centerY="-0.0165" centerX="0.013953"/>
+			</object>
+			<object name="View">
+				<transform y="0.08" sy="5.838223" sx="6"/>
+			</object>
+		</object>
+	</scene>
+</root>

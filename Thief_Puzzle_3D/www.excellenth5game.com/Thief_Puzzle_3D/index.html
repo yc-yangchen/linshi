@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+<meta charset="UTF-8">
+<title>Thief Puzzle 3D</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no'>
+<meta name="keywords" content="Puzzle,Thief,Challenge,Strategy,Youth">
+<meta name="description" content="Master stealth and strategy in Thief Puzzle 3D - become the ultimate stealth master in this captivating puzzle game! In Thief Puzzle, you dive into a world of mischief and tactical gameplay. Take control of a thief’s hand, guiding it through intricate levels to snatch the prized possessions. Each level presents a new puzzle where you must cleverly navigate around obstacles and outwit security measures to reach your target. With every successful heist, the challenges grow, testing your skills to think outside the box and act like a true master thief. So grab your mask and start your cunning journey in Thief Puzzle today!">
+<style>
+	* {
+		padding: 0;
+		margin: 0;
+	}
+	html,body{
+		width: 100%;
+		height: 100%;
+		background-color: white;;
+	} 
+	.game{
+		width:100vw;height:92%;background-color: white;
+	}
+	.game iframe{
+		width: 100%;
+		height: 100%;
+		pointer-events: all;
+	}
+	.foot{
+		position: absolute;
+		top: 92%;
+		left: 0;
+		width: 100%;
+		height:52px;
+		/* background-color: black; */
+	}
+	
+</style>
+<style type="text/css">
+	#page_loader {
+	  background-color: #222b32;
+	  width: 100%;
+	  height: 100%;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  padding-bottom: 30%;
+	  box-sizing: border-box;
+	  flex-direction: column;
+	  /* opacity:0.5; */
+	  position: fixed;
+	  color: white;
+	  top: 0;
+	  left: 0;
+	  z-index: 999;
+	}
+	.loader {
+	  width: 48px;
+	  height: 48px;
+	  display: inline-block;
+	  position: relative;
+	}
+	.loader::after,
+	.loader::before {
+	  content: "";
+	  box-sizing: border-box;
+	  width: 48px;
+	  height: 48px;
+	  border: 2px solid #fff;
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  animation: rotationBreak 3s ease-in-out infinite alternate;
+	}
+	.loader::after {
+	  border-color: #ff3d00;
+	  animation-direction: alternate-reverse;
+	}
+	@keyframes rotationBreak {
+	  0% {
+		transform: rotate(0);
+	  }
+	  25% {
+		transform: rotate(90deg);
+	  }
+	  50% {
+		transform: rotate(180deg);
+	  }
+	  75% {
+		transform: rotate(270deg);
+	  }
+	  100% {
+		transform: rotate(360deg);
+	  }
+	}
+	.fg-spinner{
+		display: none !important;
+	}
+  </style>
+  <!-- <div id="page_loader">
+	<span class="loader"></span>
+	<div>&nbsp;</div>
+	<div>Loading...</div>
+  </div> -->
+</head>
+<body>
+	<div class="game">
+		<iframe id="iframe" frameborder="0" oncontextmenu="event.preventDefault()"></iframe>
+	</div>
+	<div class="foot">
+		<ins class="adsbygoogle"
+			style="display:inline-block;width:100%;height:50px;"
+			data-ad-client="ca-pub-3214612466403714"
+			data-ad-slot="4976762373"
+			>
+			</ins> 
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+</body>
+<script>
+	if (!window.a_bridge){
+		document.getElementById('iframe').src = 'game.html';
+	}
+</script>
+<!-- <script src="https://www.hippoobox.com/static/sdk/adsdk_1.8.0.0.js"></script> -->
+<script src="adsdk_1.9.5.2.js"></script>
+	<script>
+		function gameInit(){
+			window.h5sdk.init(5019715,"","","","",{
+				ga: {
+					id: "G-L2NLPJNTLS",
+				},
+				adsence: {
+					client: "ca-pub-3214612466403714",
+					"data-ad-frequency-hint": "45s",
+					// "data-adbreak-test": "on",
+					"data-ad-channel": "8536733430",
+					callback: () => {
+						window.h5sdk.athenaSend("game_start");
+						window.h5sdk.adConfig({
+							preloadAdBreaks: "on",
+							// preloadAdBreaks: "auto",
+							onReady: () => {
+								// window.adBreak({type:'next',name:'pull'});
+								console.log("😋 ", "adconfig success");
+								window.h5sdk.adBreak({
+									type: "preroll",
+									name: "mypreroll",
+									adBreakDone: () => {
+										console.log("😋 adBreakDone outside");
+									},
+								});
+							},
+						});
+					},
+				},
+			});
+			let storeCount = 0;
+			window.addEventListener('message',(evt)=>{
+				console.log('🚀 ~ message', evt);
+				if (evt && evt.data==='next'){
+					// storeCount+=1;
+					// if (storeCount <= 1){
+					// 	return;
+					// }
+					console.log('🚀 ~ showAd');
+					window.h5sdk.adBreak({
+						type: "next",
+						name: "mynext",
+					});
+				} else if(evt && evt.data==='gameLoadingCompleted'){
+					window.h5sdk.gameLoadingCompleted();
+				} else if(evt && evt.data==='loadingHide'){
+					document.getElementById('page_loader') && document.getElementById('page_loader').remove();
+				} else if (evt && evt.data==='reward'){
+					window.h5sdk.adBreak({
+						type: "reward",
+						name: "myreward",
+						adDismissed: () => {
+							console.log("adDismissed");
+						},
+						adViewed: () => {
+							console.log("adViewed");
+						},
+						beforeReward: (showAdFn) => {
+							showAdFn();
+						},
+						adBreakDone:(info)=>{
+							const iframe = document.getElementById('iframe').contentWindow;
+							if (info.breakStatus === 'viewed'){
+								iframe.postMessage('rewardSuccess');
+							} else if (info.breakStatus === 'dismissed'){
+								iframe.postMessage('rewardDismissed');
+							} else {
+								iframe.postMessage('rewardFailed');
+							}
+						}
+					});
+				}
+			});
+		}
+		
+		if (window.a_bridge){
+			window.addEventListener('load',()=>{
+				document.getElementById('iframe').src = 'game.html';
+				gameInit();
+			});
+		} else {
+			gameInit();
+		}
+	</script>
+</html>

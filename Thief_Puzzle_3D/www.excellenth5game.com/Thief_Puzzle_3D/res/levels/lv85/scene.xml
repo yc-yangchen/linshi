@@ -1,0 +1,155 @@
+<root>
+	<anims win2="t_85_2_win" win1="t_85_1_win" lose2="t_85_2_lose" lose1_2="t_85_1_lose2" lose1="t_85_1_lose"/>
+	<scene>
+		<object name="lv85">
+			<object name="TrangTri">
+				<object name="bg (7)">
+					<transform y="0.71" sx="106.00734"/>
+					<sprite units="190" frame="bg"/>
+				</object>
+				<object name="song (1)">
+					<transform y="1.05" x="-0.46935"/>
+					<sprite units="190" frame="song"/>
+				</object>
+				<object name="song">
+					<transform y="-0.35" x="0.61425"/>
+					<sprite units="190" frame="song"/>
+				</object>
+				<object name="bg (2)">
+					<transform y="0.26" x="-1.714"/>
+					<sprite units="190" frame="dat_lien"/>
+				</object>
+				<object name="bg (3)">
+					<transform y="0.26" x="1.786"/>
+					<sprite units="190" frame="dat_lien2"/>
+				</object>
+				<object name="money">
+					<transform y="0.557" x="2.217"/>
+					<sprite units="190" frame="money"/>
+				</object>
+				<object name="bg (5)">
+					<transform y="0.26" x="3.83"/>
+					<sprite units="190" frame="dat_lien2" flipX="1"/>
+				</object>
+				<object name="bg (4)">
+					<transform y="0.26" x="-3.91"/>
+					<sprite units="190" frame="dat_lien" flipX="1"/>
+				</object>
+			</object>
+			<object name="Mask">
+				<transform y="-0.393443" x="0.058403" sy="1.53193" sx="0.774382"/>
+				<mask width="4" units="4" height="4" frame="Square"/>
+				<object opponent="2" name="Piranha">
+					<transform y="0.885165" x="0.061957" sy="0.380121" sx="0.751978"/>
+					<circle radius="0.28" centerY="-0.27" centerX="-0.11"/>
+					<circle radius="0.28" centerY="0" centerX="0.1"/>
+					<circle radius="0.21" centerY="0.4" centerX="0.13"/>
+					<object opponent="1" name="Frame1">
+						<sprite units="190" frame="trap_ca_piranha"/>
+					</object>
+					<object name="Frame2">
+						<sprite units="150" hide="1" frame="trap_ca_piranha_ngam_mieng"/>
+					</object>
+				</object>
+			</object>
+			<object name="Mask">
+				<transform y="1.47112" x="-0.71236" sy="1.58072" sx="0.8832"/>
+				<mask width="4" units="4" height="4" frame="Square"/>
+				<object opponent="2" name="Piranha">
+					<transform y="0.968065" x="0.061956" sy="0.420155" sx="0.751978"/>
+					<circle radius="0.28" centerY="-0.27" centerX="-0.11"/>
+					<circle radius="0.28" centerY="0" centerX="0.1"/>
+					<circle radius="0.21" centerY="0.4" centerX="0.13"/>
+					<object opponent="1" name="Frame1">
+						<sprite units="190" frame="trap_ca_piranha"/>
+					</object>
+					<object name="Frame2">
+						<sprite units="150" hide="1" frame="trap_ca_piranha_ngam_mieng"/>
+					</object>
+				</object>
+			</object>
+			<object name="Mask">
+				<transform y="0.9155" x="0.89655" sy="1.729" sx="0.874"/>
+				<mask width="4" units="4" height="4" frame="Square"/>
+				<object opponent="2" name="Piranha">
+					<transform y="0.932967" x="0.061956" sy="0.380121" sx="0.751978"/>
+					<circle radius="0.28" centerY="-0.27" centerX="-0.11"/>
+					<circle radius="0.28" centerY="0" centerX="0.1"/>
+					<circle radius="0.21" centerY="0.4" centerX="0.13"/>
+					<object opponent="1" name="Frame1">
+						<sprite units="190" frame="trap_ca_piranha"/>
+					</object>
+					<object name="Frame2">
+						<sprite units="150" hide="1" frame="trap_ca_piranha_ngam_mieng"/>
+					</object>
+				</object>
+			</object>
+			<object offWin="1" name="target">
+				<transform y="0.17" x="2.32" s="0.970136"/>
+				<sprite units="190" frame="balo_money"/>
+				<box extentY="0.317411" extentX="0.200641" centerY="0.008471" centerX="0.000109"/>
+			</object>
+			<object name="Rope"/>
+			<object name="Hand">
+				<transform y="-0.733" x="-1.664" s="0.71997" r="1.79769"/>
+				<object name="SpriteHand">
+					<transform x="-0.262" r="-1.295034"/>
+					<sprite units="190" pivotY="0.090205" pivotX="0.681032" frame="hand_open" flipX="1"/>
+				</object>
+				<object rope="1" name="Cotay">
+					<transform x="-0.262"/>
+				</object>
+				<object name="Pos">
+					<transform y="-0.022" x="0.101"/>
+				</object>
+			</object>
+			<object name="Nv">
+				<object name="NVC">
+					<transform y="0.38" x="-1.974"/>
+					<skel type="thief" nv="1" loop="1" animName="t_85_1_be"/>
+					<object name="target (1)">
+						<transform y="-0.7" x="-0.44" s="0.970136"/>
+						<sprite units="190" show="win" frame="balo_money"/>
+					</object>
+				</object>
+				<object opponent="1" name="NVC (1)">
+					<transform y="0.14" x="1.975" s="0.95071"/>
+					<skel type="thief" nv="2" loop="1" animName="t_85_2_be"/>
+					<capsule radius="0.222614" height="2.015919" centerY="-1.41132" centerX="0.057372" axis="y"/>
+					<object offWin="1" offClose="1" name="dien_thoai">
+						<transform y="-2.053203" x="-0.336591" s="1.051846"/>
+						<sprite units="190" frame="dien_thoai"/>
+					</object>
+					<object name="happy" delete="1">
+						<transform y="-1.88567" x="-0.470846" s="1.184331"/>
+					</object>
+				</object>
+			</object>
+			<object rope="0" name="Start]">
+				<transform y="-1.318" x="-1.908"/>
+			</object>
+			<object name="SttTarget">
+				<transform y="-1.77" x="-1.548"/>
+				<object name="bong_thoai">
+					<transform s="0.755097"/>
+					<sprite units="200" pivotY="0.986423" pivotX="0.817453" frame="bubble" flipX="1"/>
+					<object name="target (1)">
+						<transform y="-0.65" x="0.44" s="0.920604"/>
+						<sprite units="190" frame="balo_money"/>
+					</object>
+				</object>
+			</object>
+			<object name="ObjectHint (1)">
+				<object name="New Game Object">
+					<transform y="0.17" x="2.32"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-1.318" x="-1.908"/>
+				</object>
+			</object>
+			<object name="View">
+				<transform y="-0.25" s="5.558437"/>
+			</object>
+		</object>
+	</scene>
+</root>

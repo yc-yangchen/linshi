@@ -1,0 +1,148 @@
+<root>
+	<anims/>
+	<scene>
+		<object name="lv352">
+			<object name="TrangTri">
+				<object name="BG (1)">
+					<transform y="0.019" x="-5.55" sy="0.491432" sx="0.516387"/>
+					<sprite units="100" frame="bg" flipX="1"/>
+				</object>
+				<object name="BG">
+					<transform y="0.019" sy="0.491432" sx="0.516387"/>
+					<sprite units="100" frame="bg"/>
+				</object>
+				<object name="BG (2)">
+					<transform y="0.019" x="5.53" sy="0.491432" sx="0.516387"/>
+					<sprite units="100" frame="bg" flipX="1"/>
+				</object>
+			</object>
+			<object name="Diem_neo_tuyet" hook="1">
+				<transform y="-0.0412" x="1.7933" sy="0.804709" sx="0.829298"/>
+				<sprite units="190" frame="cot_bang"/>
+				<object name="GameObject (2)">
+					<transform y="0.0279" x="0.0064" sy="0.771165" sx="0.357964"/>
+					<box/>
+				</object>
+			</object>
+			<object name="Diem_neo_tuyet (1)" hook="1">
+				<transform y="0.936" x="-1.261" sy="0.804709" sx="0.829298"/>
+				<sprite units="190" frame="cot_bang"/>
+				<object name="GameObject (2)">
+					<transform y="0.0279" x="0.0064" sy="0.771165" sx="0.357964"/>
+					<box/>
+				</object>
+			</object>
+			<object opponent="1" name="Trap_ho_bang">
+				<transform y="-0.2934" x="-0.0545" sy="0.531983" sx="0.514406"/>
+				<sprite units="100" frame="ho bang"/>
+				<capsule radius="0.592854" height="4.229718" centerY="0.088788" centerX="-0.011761" axis="x"/>
+			</object>
+			<object opponent="1" name="Trap_ho_bang (1)">
+				<transform y="2.09" x="0.665" sy="0.531983" sx="0.514406"/>
+				<sprite units="100" frame="ho bang"/>
+				<capsule radius="0.493172" height="4.168964" centerY="0.206278" centerX="0.018615" axis="x"/>
+			</object>
+			<object offWin="1" offClose="1" name="Be">
+				<object opponent="1" name="Trap_tuyet (1)">
+					<transform y="-2.5555" x="-2.1328" sy="0.516603" sx="0.512107"/>
+					<sprite units="100" frame="tuyet lo"/>
+				</object>
+			</object>
+			<object offWin="1" offClose="1" name="target">
+				<transform y="-1.559" x="1.262"/>
+				<capsule radius="0.200106" height="1.712019" centerY="-0.080791" centerX="0.053669" axis="y"/>
+				<object opponent="1" name="NVP">
+					<transform y="0.78" sy="0.355385" sx="0.346533"/>
+					<skel type="girl" loop="1" animName="t_352_1_be"/>
+				</object>
+			</object>
+			<object name="Rope"/>
+			<object name="Hand">
+				<transform y="2.168" x="-1.667" s="0.71586" r="0.591143"/>
+				<object name="SpriteHand">
+					<transform x="-0.262" r="-1.172861"/>
+					<sprite units="190" pivotY="0.090205" pivotX="0.681032" frame="hand_open" flipX="1"/>
+				</object>
+				<object rope="1" name="Cotay">
+					<transform x="-0.262"/>
+				</object>
+				<object name="Pos">
+					<transform y="-0.02" x="0.06"/>
+				</object>
+			</object>
+			<object name="Nv">
+				<object name="Be" delete="1">
+					<object name="NVC">
+						<transform y="3.116" x="-2.0475" sy="0.908831" sx="0.897865"/>
+						<skel type="thief" nv="1" loop="1" animName="t_352_1_be"/>
+					</object>
+				</object>
+				<object showWin="1" name="Win">
+					<object name="NVC (1)">
+						<transform y="3.08" x="-2.074" sy="0.960108" sx="0.936193"/>
+						<skel type="thief" loop="1" hide="1" animName="t_352_1_win"/>
+						<object name="happy" hide="1">
+							<transform y="-2.044" x="-0.316" s="1.2"/>
+						</object>
+					</object>
+					<object name="NVP (1)">
+						<transform y="3.096" x="-1.117" sy="0.384542" sx="0.374963"/>
+						<skel type="girl" loop="1" hide="1" animName="t_352_1_win"/>
+						<object name="love" hide="1">
+							<transform y="-4.77" x="0.41" s="2.5"/>
+						</object>
+					</object>
+					<object name="Trap_tuyet (1)">
+						<transform y="-1.3476" x="1.357" sy="0.517872" sx="0.525798" r="-0.684693"/>
+						<sprite units="100" hide="1" frame="tuyet lo"/>
+					</object>
+				</object>
+				<object showClose="1" name="Lose">
+					<object name="NVC (1)">
+						<transform y="3.035" x="-2.148" sy="0.845911" sx="0.850238"/>
+						<skel type="thief" loop="1" hide="1" animName="t_352_1_lose"/>
+					</object>
+					<object opponent="2" name="NVP (1)">
+						<transform y="-0.764" x="1.221" sy="0.374307" sx="0.370656"/>
+						<skel type="girl" loop="1" hide="1" animName="t_352_1_lose"/>
+					</object>
+					<object name="Trap_tuyet">
+						<transform y="-1.793" x="0.879" sy="0.516603" sx="0.512107"/>
+						<sprite units="100" hide="1" frame="tuyet lo"/>
+					</object>
+				</object>
+			</object>
+			<object rope="0" name="Start" delete="1">
+				<transform y="1.673" x="-2.034"/>
+			</object>
+			<object name="SttTarget">
+				<transform y="1.175" x="-1.815"/>
+				<object name="bong_thoai">
+					<transform s="0.72058"/>
+					<sprite units="200" pivotY="0.986423" pivotX="0.817453" frame="bubble" flipX="1"/>
+					<object name="target (1)">
+						<transform y="-0.65" x="0.425" s="0.133593"/>
+						<sprite units="100" frame="g_be_0"/>
+					</object>
+				</object>
+			</object>
+			<object name="ObjectHint">
+				<object name="New Game Object">
+					<transform y="-1.16" x="1.41"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-0.329033" x="1.948037"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="0.29252" x="1.947202"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="1.673" x="-2.034"/>
+				</object>
+			</object>
+			<object name="View">
+				<transform sy="6" sx="7"/>
+			</object>
+		</object>
+	</scene>
+</root>

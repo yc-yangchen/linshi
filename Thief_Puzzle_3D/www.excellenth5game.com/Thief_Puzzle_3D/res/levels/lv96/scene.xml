@@ -1,0 +1,150 @@
+<root>
+	<anims win3="t_96_1_win" win2="t_96_2_win" win1="t_96_1_win" lose3="t_96_1_lose" lose2_2="t_96_2_lose2" lose2="t_96_2_lose" lose1_2="t_96_1_lose2" lose1="t_96_1_lose"/>
+	<scene>
+		<object name="lv96">
+			<object name="TrangTri">
+				<object name="bg_ghe_sofa (1)">
+					<transform y="-0.291" sy="1.052683" sx="60.518906"/>
+					<sprite units="190" frame="bg_duong_pho 1"/>
+				</object>
+			</object>
+			<object name="Nv">
+				<object name="NVC">
+					<transform y="-2.21" x="0.93"/>
+					<skel type="thief" offWin="1" nv="1" loop="1" animName="t_96_1_be"/>
+				</object>
+				<object name="Win">
+					<object name="NVC (1)">
+						<transform y="-1.98" x="-1.09"/>
+						<skel type="thief" showWin="1" loop="1" hide="1" animName="t_96_1_win"/>
+						<object name="target (1)">
+							<transform y="-1.38" x="-0.58" s="0.975867"/>
+							<sprite units="190" show="win" frame="item_bo_hoa"/>
+						</object>
+						<object showWin="1" name="happy" hide="1">
+							<transform y="-2.06718" x="0.226895" s="1.036314"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object rope="0" name="Start]">
+				<transform y="-2.916" x="0.924"/>
+			</object>
+			<object name="track">
+				<transform y="-1.121" s="0.93586"/>
+				<sprite units="190" frame="trap_duong_ray_luoi_cua"/>
+			</object>
+			<object name="track">
+				<transform y="-0.283" s="0.93586"/>
+				<sprite units="190" frame="trap_duong_ray_luoi_cua"/>
+			</object>
+			<object name="track">
+				<transform y="0.552" s="0.93586"/>
+				<sprite units="190" frame="trap_duong_ray_luoi_cua"/>
+			</object>
+			<object name="CircularSaw">
+				<transform y="-1.322865" sy="0.417991" sx="4.340051"/>
+				<mask width="4" units="4" height="4" frame="Square"/>
+				<object opponent="2" name="trap_luoi_cua">
+					<transform y="0.415773" x="0.204852" sy="1.297941" sx="0.125005"/>
+					<sprite units="190" frame="trap_luoi_cua"/>
+					<capsule radius="0.41" height="1.18" centerY="-0.167561" centerX="0.017406" axis="x"/>
+				</object>
+				<object opponent="1" name="r">
+					<transform y="0.415773" x="0.412291" sy="2.238949" sx="0.215633"/>
+				</object>
+				<object opponent="1" name="l">
+					<transform y="0.415773" x="-0.412291" sy="2.238949" sx="0.215633"/>
+				</object>
+			</object>
+			<object name="CircularSaw">
+				<transform y="-0.480466" sy="0.437359" sx="4.340051"/>
+				<mask width="4" units="4" height="4" frame="Square"/>
+				<object opponent="2" name="trap_luoi_cua">
+					<transform y="0.387303" x="-0.172507" sy="1.240461" sx="0.125005"/>
+					<sprite units="190" frame="trap_luoi_cua"/>
+					<capsule radius="0.41" height="1.18" centerY="-0.144053" centerX="0.000765" axis="x"/>
+				</object>
+				<object opponent="1" name="r">
+					<transform y="0.387303" x="0.412291" sy="2.139796" sx="0.215633"/>
+				</object>
+				<object opponent="1" name="l">
+					<transform y="0.387303" x="-0.412291" sy="2.139796" sx="0.215633"/>
+				</object>
+			</object>
+			<object name="CircularSaw">
+				<transform y="0.355657" sy="0.436859" sx="4.340051"/>
+				<mask width="4" units="4" height="4" frame="Square"/>
+				<object opponent="2" name="trap_luoi_cua">
+					<transform y="0.385176" x="0.412291" sy="1.241882" sx="0.125005"/>
+					<sprite units="190" frame="trap_luoi_cua"/>
+					<capsule radius="0.41" height="1.18" centerY="-0.139001" centerX="0.018926" axis="x"/>
+				</object>
+				<object opponent="1" name="r">
+					<transform y="0.385176" x="0.412291" sy="2.142248" sx="0.215633"/>
+				</object>
+				<object opponent="1" name="l">
+					<transform y="0.385176" x="-0.412291" sy="2.142248" sx="0.215633"/>
+				</object>
+			</object>
+			<object opponent="1" name="NVP">
+				<transform y="2.04" x="1.06" s="0.90586"/>
+				<skel type="thief" nv="2" loop="1" animName="t_96_2_be"/>
+				<capsule radius="0.192457" height="1.893173" centerY="-0.917368" centerX="-0.242114" axis="y"/>
+				<object name="love" delete="1">
+					<transform y="-1.845313" x="0.144559" s="1.103923"/>
+				</object>
+				<object showPosClose2="1" name="target (1)">
+					<transform y="-0.87" x="-0.65" s="1.077283"/>
+					<sprite units="190" hide="1" frame="item_bo_hoa"/>
+				</object>
+			</object>
+			<object opponent="1" name="NVN">
+				<transform y="1.99" x="-0.725" s="1.386094"/>
+				<skel type="girl" nv="3" loop="1" animName="t_96_1_be"/>
+				<capsule radius="0.11143" height="1.515063" centerY="-0.752732" centerX="0.017524" axis="y"/>
+			</object>
+			<object offWin="1" offPosClose2="1" name="target">
+				<transform y="0.441" x="0.26" s="0.975867"/>
+				<sprite units="190" frame="item_bo_hoa"/>
+				<capsule radius="0.318151" height="1.041172" centerY="0.024736" centerX="0.012977" axis="y"/>
+			</object>
+			<object name="Rope"/>
+			<object name="Hand">
+				<transform y="-2.551" x="0.599" s="0.71586" r="1.315979"/>
+				<object name="SpriteHand">
+					<transform x="-0.262" r="-1.808161"/>
+					<sprite units="190" pivotY="0.090205" pivotX="0.681032" frame="hand_open"/>
+				</object>
+				<object rope="1" name="Cotay">
+					<transform x="-0.262"/>
+				</object>
+				<object name="Pos">
+					<transform y="0.019" x="0.44"/>
+				</object>
+			</object>
+			<object name="SttTarget">
+				<transform y="-3.337" x="1.29"/>
+				<object name="bong_thoai">
+					<transform s="0.72058"/>
+					<sprite units="200" pivotY="0.986423" pivotX="0.817453" frame="bubble" flipX="1"/>
+					<object name="target (1)">
+						<transform y="-0.677" x="0.437" s="0.51763"/>
+						<sprite units="190" frame="item_bo_hoa"/>
+					</object>
+				</object>
+			</object>
+			<object name="ObjectHint (1)">
+				<object name="New Game Object">
+					<transform y="-2.922" x="0.919"/>
+				</object>
+				<object name="New Game Object (1)">
+					<transform y="0.309" x="0.259"/>
+				</object>
+			</object>
+			<object name="View">
+				<transform y="-0.973" sy="6.133026" sx="5.475"/>
+			</object>
+		</object>
+	</scene>
+</root>

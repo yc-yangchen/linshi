@@ -1,0 +1,182 @@
+<root>
+	<anims/>
+	<scene>
+		<object name="lv289">
+			<object name="TrangTri">
+				<object name="bg_san_khau (2)">
+					<transform y="0.18" x="8.35" sy="2" sx="3"/>
+					<sprite units="190" frame="bg_rung" flipX="1"/>
+				</object>
+				<object name="bg_san_khau (1)">
+					<transform y="0.18" x="-8.33" sy="2" sx="3"/>
+					<sprite units="190" frame="bg_rung" flipX="1"/>
+				</object>
+				<object name="bg_san_khau">
+					<transform y="0.18" sy="2" sx="3"/>
+					<sprite units="190" frame="bg_rung"/>
+				</object>
+				<object name="cay_2">
+					<transform x="1.84"/>
+					<sprite units="190" frame="cay_1"/>
+				</object>
+				<object name="Ge">
+					<transform y="-0.09" x="-2.73" sy="0.968842"/>
+					<sprite units="190" frame="cay_1"/>
+				</object>
+			</object>
+			<object offWin="1" name="target">
+				<transform y="-1.73" x="1.76" s="0.75927"/>
+				<capsule radius="0.360952" height="0.832907" centerY="-0.266706" centerX="-0.454389" axis="x"/>
+				<sprite units="190" frame="dieu"/>
+			</object>
+			<object opponent="1" name="Raven1">
+				<transform y="-0.23" x="-1.847" sy="0.551305" sx="-0.551305" r="-0.507716"/>
+				<capsule radius="0.326794" height="1.649342" centerY="0.001654" centerX="-0.119757" axis="x"/>
+				<object name="Qua">
+					<transform r="-0.507716"/>
+					<sprite units="100" frame="con_qua"/>
+				</object>
+			</object>
+			<object opponent="1" name="Raven2">
+				<transform y="-0.059" x="1.174" s="0.551305" r="0.507716"/>
+				<capsule radius="0.326794" height="1.649342" centerY="0.001654" centerX="-0.119757" axis="x"/>
+				<object name="Qua">
+					<transform r="-0.507716"/>
+					<sprite units="100" frame="con_qua"/>
+				</object>
+			</object>
+			<object name="Tranh" hook="1">
+				<transform y="-1.243" x="2.323"/>
+				<sprite units="190" frame="diem_neo_la_1"/>
+				<object name="GameObject (4)">
+					<transform s="1.233594"/>
+					<circle radius="0.1"/>
+				</object>
+			</object>
+			<object name="Tranh (1)" hook="1">
+				<transform y="-2.386" x="0.024"/>
+				<sprite units="190" frame="diem_neo_la_1" flipX="1"/>
+				<object name="GameObject (4)">
+					<transform s="1.233594"/>
+					<circle radius="0.1"/>
+				</object>
+			</object>
+			<object name="Tranh (2)">
+				<transform y="0.457" x="2.21" r="-1.677959"/>
+				<sprite units="190" frame="diem_neo_la_1" flipX="1"/>
+				<object name="GameObject (4)">
+					<transform s="1.233594"/>
+					<circle radius="0.1"/>
+				</object>
+			</object>
+			<object name="Tranh (4)" hook="1">
+				<transform y="-1.608" x="-2.104"/>
+				<sprite units="190" frame="diem_neo_la_1" flipX="1"/>
+				<object name="GameObject (4)">
+					<transform s="1.233594"/>
+					<circle radius="0.1"/>
+				</object>
+			</object>
+			<object name="Tranh (5)" hook="1">
+				<transform y="-2.366" x="-0.958"/>
+				<sprite units="190" frame="diem_neo_la_1"/>
+				<object name="GameObject (4)">
+					<transform s="1.233594"/>
+					<circle radius="0.1"/>
+				</object>
+			</object>
+			<object name="Nv">
+				<object name="Be" delete="1">
+					<object name="NVC">
+						<transform y="3.2" x="-1.71"/>
+						<skel type="thief" loop="1" animName="t_289_1_be"/>
+					</object>
+				</object>
+				<object showWin="1" name="win">
+					<object name="NVC (1)">
+						<transform y="3.2" x="-0.964"/>
+						<skel type="thief" loop="1" animName="t_289_1_win"/>
+						<object name="target (1)">
+							<transform y="-2.13" x="0.96" s="0.75927"/>
+							<sprite units="190" frame="dieu"/>
+						</object>
+						<object name="happy">
+							<transform y="-2.217842" x="-0.48857" s="1.036314"/>
+						</object>
+					</object>
+				</object>
+				<object showClose="1" name="lose">
+					<object name="NVC">
+						<transform y="3.2" x="-1.87"/>
+						<skel type="thief" loop="1" hide="1" animName="t_289_1_lose"/>
+					</object>
+				</object>
+			</object>
+			<object name="RavenAttack1">
+				<transform y="0.666" x="-1.707" s="0.551305" r="-2.278353"/>
+				<sprite units="100" hide="1" frame="qua_mo" flipY="1"/>
+			</object>
+			<object name="RavenAttack2">
+				<transform y="0.933" x="-1.16" s="0.551305"/>
+				<sprite units="100" hide="1" frame="qua_mo"/>
+			</object>
+			<object name="Rope"/>
+			<object name="Hand">
+				<transform y="1.786" x="-1.151" s="0.66903" r="-0.321315"/>
+				<object rope="1" name="SpriteHand">
+					<transform x="-0.262" r="-1.258382"/>
+					<sprite units="190" pivotY="0.090205" pivotX="0.681032" frame="hand_open" flipX="1"/>
+				</object>
+				<object name="Cotay">
+					<transform x="-0.262"/>
+				</object>
+				<object name="Pos">
+					<transform y="-0.022" x="0.101"/>
+				</object>
+			</object>
+			<object rope="0" name="Start]">
+				<transform y="1.544" x="-1.634"/>
+			</object>
+			<object name="SttTarget">
+				<transform y="1.078" x="-1.989"/>
+				<object name="bong_thoai">
+					<transform s="0.760142"/>
+					<sprite units="200" pivotY="0.986423" pivotX="0.817453" frame="bubble"/>
+					<object name="target (3)">
+						<transform y="-0.62" x="-0.44" s="0.438741"/>
+						<sprite units="190" frame="dieu"/>
+					</object>
+				</object>
+			</object>
+			<object name="ObjectHint (5)">
+				<object name="New Game Object">
+					<transform y="-1.73" x="1.76"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-1.3285" x="2.385474"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-1.275488" x="2.423797"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-1.210518" x="2.423798"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="0.445963" x="2.315315"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="0.509962" x="2.3017"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="0.553727" x="2.253165"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="1.544" x="-1.634"/>
+				</object>
+			</object>
+			<object name="View">
+				<transform y="0.13" sy="6.186825" sx="5.55"/>
+			</object>
+		</object>
+	</scene>
+</root>

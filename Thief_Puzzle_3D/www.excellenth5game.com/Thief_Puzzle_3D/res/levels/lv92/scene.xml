@@ -1,0 +1,120 @@
+<root>
+	<anims win1="t_92_1_win" lose1="t_92_1_lose"/>
+	<scene>
+		<object name="lv92">
+			<object name="TrangTri">
+				<object name="bg">
+					<transform y="0.8121" sy="0.90561" sx="59.620003"/>
+					<sprite units="190" frame="bg_duong_pho"/>
+				</object>
+				<object name="bg (1)">
+					<transform y="-2.147"/>
+					<sprite units="190" frame="shop"/>
+				</object>
+				<object name="bg (2)">
+					<transform y="-1.705" x="-0.66"/>
+					<sprite units="190" frame="gia_treo_ao"/>
+				</object>
+			</object>
+			<object offWin="1" name="target">
+				<transform y="-2.149" x="-0.647"/>
+				<sprite units="190" frame="ao_dep2"/>
+				<capsule radius="0.231517" height="0.926316" centerY="0" centerX="-0.016634" axis="y"/>
+			</object>
+			<object name="GameObject">
+				<object name="Masher">
+					<transform y="0.508" x="0.655" sy="0.78" sx="-3.47"/>
+					<mask width="4" units="4" height="4" frame="Square"/>
+					<object name="lo_xo">
+						<transform x="-0.265" sy="1.282051" sx="-0.288184"/>
+						<object opponent="1" name="tay_dam">
+							<transform x="-1.346"/>
+							<sprite units="190" frame="may_nghien_1"/>
+							<box extentY="0.360526" extentX="0.213158" centerY="-0" centerX="0"/>
+						</object>
+						<object name="Rectangle 20">
+							<transform x="-0.006"/>
+							<sprite units="190" frame="lo_xo_may_nghien copy"/>
+						</object>
+					</object>
+				</object>
+				<object name="Block">
+					<transform y="0.509" x="2.6"/>
+					<sprite units="190" frame="may_nghien_1"/>
+				</object>
+				<object name="Masher">
+					<transform y="0.499" x="-0.646" sy="0.78" sx="-3.47" r="-3.141593"/>
+					<mask width="4" units="4" height="4" frame="Square"/>
+					<object name="lo_xo">
+						<transform x="-0.265" sy="1.282051" sx="-0.288184"/>
+						<object opponent="1" name="tay_dam">
+							<transform x="-1.346"/>
+							<sprite units="190" frame="may_nghien_1"/>
+							<box extentY="0.360526" extentX="0.213158" centerY="-0" centerX="0"/>
+						</object>
+						<object name="Rectangle 20">
+							<transform x="-0.006"/>
+							<sprite units="190" frame="lo_xo_may_nghien copy"/>
+						</object>
+					</object>
+				</object>
+				<object name="Block">
+					<transform y="0.509" x="-2.58" r="-3.141593"/>
+					<sprite units="190" frame="may_nghien_1"/>
+				</object>
+			</object>
+			<object name="Rope"/>
+			<object name="Hand">
+				<transform y="1.468" x="-0.542" s="0.767483" r="-2.38412"/>
+				<object rope="1" name="SpriteHand">
+					<transform x="-0.262" r="-1.213004"/>
+					<sprite units="190" pivotY="0.090205" pivotX="0.681032" frame="hand_open" flipX="1"/>
+				</object>
+				<object name="Cotay">
+					<transform x="-0.262"/>
+				</object>
+				<object name="Pos">
+					<transform y="-0.022" x="0.101"/>
+				</object>
+			</object>
+			<object name="Nv">
+				<object name="NVC">
+					<transform y="2.821" x="-0.022" s="0.984234"/>
+					<skel type="thief" nv="1" loop="1" animName="t_92_1_be"/>
+					<object name="ao_mac">
+						<transform y="-1.31" x="0.05" s="1.016018" r="0.126536"/>
+						<sprite units="190" show="win" frame="ao_mac"/>
+					</object>
+					<object showWin="1" name="happy" hide="1">
+						<transform y="-2.258" x="-0.327" s="1.052914"/>
+					</object>
+				</object>
+			</object>
+			<object rope="0" name="Start]">
+				<transform y="1.095" x="-0.045"/>
+			</object>
+			<object name="SttTarget">
+				<transform y="0.718" x="0.307"/>
+				<object name="bong_thoai">
+					<transform s="0.646324"/>
+					<sprite units="200" pivotY="0.986423" pivotX="0.817453" frame="bubble" flipX="1"/>
+					<object name="target (1)">
+						<transform y="-0.65" x="0.43" s="0.733089"/>
+						<sprite units="190" frame="ao_dep2"/>
+					</object>
+				</object>
+			</object>
+			<object name="ObjectHint (3)">
+				<object name="New Game Object">
+					<transform y="-2.116" x="-0.667"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="1.107" x="-0.047"/>
+				</object>
+			</object>
+			<object name="View">
+				<transform y="-0.26" sy="6.544459" sx="5.41125"/>
+			</object>
+		</object>
+	</scene>
+</root>

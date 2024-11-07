@@ -1,0 +1,162 @@
+<root>
+	<anims lose1="t_35_1_lose"/>
+	<scene>
+		<object name="lv35">
+			<object name="TrangTri">
+				<object name="bg">
+					<transform y="-0.25" sx="40.98075"/>
+					<sprite units="190" frame="bg_duong_di"/>
+				</object>
+				<object name="bang_cong_tac">
+					<transform y="-1.617919" x="1.76"/>
+					<sprite units="190" frame="bang_cong_tac"/>
+				</object>
+				<object name="trap_dia_bay">
+					<transform y="-2.31" x="2.472"/>
+					<sprite units="190" frame="tru_cong"/>
+					<object offWin="1" name="canh_cong">
+						<transform y="2.07" x="0.008"/>
+						<sprite units="190" frame="canh_cong"/>
+					</object>
+				</object>
+				<object name="trap_dia_bay (1)">
+					<transform y="1.829" x="2.472"/>
+					<sprite units="190" frame="tru_cong"/>
+				</object>
+			</object>
+			<object name="target">
+				<transform y="-1.687" x="1.754"/>
+				<circle radius="0.139474" centerY="0" centerX="0"/>
+			</object>
+			<object offWin="1" name="Target1">
+				<transform y="-1.687" x="1.754"/>
+				<sprite units="190" frame="nut_tat"/>
+			</object>
+			<object showWin="1" name="Target2">
+				<transform y="-1.687" x="1.754"/>
+				<sprite units="190" hide="1" frame="nut_bat"/>
+			</object>
+			<object name="CarPress">
+				<transform x="0.16"/>
+				<box extentY="0.777366" extentX="0.5" centerY="-0.265038" centerX="-0.024655"/>
+			</object>
+			<object name="Masher1">
+				<transform y="-2.4" x="0.163"/>
+				<object name="mask">
+					<transform y="1.125" sy="1.328048" sx="0.375"/>
+					<object name="Group 6">
+						<transform y="-0.492" sy="0.752985" sx="2.666667"/>
+						<sprite units="190" frame="Group 6"/>
+					</object>
+				</object>
+				<object opponent="1" name="end">
+					<transform y="1.07"/>
+					<sprite units="190" frame="Group 7" flipY="1"/>
+					<box extentY="0.321053" extentX="1.126316" centerY="0" centerX="0"/>
+				</object>
+			</object>
+			<object name="Block1" hook="1">
+				<transform y="-2.4" x="0.163"/>
+				<sprite units="190" frame="Group 8"/>
+				<object name="GameObject">
+					<box extentY="0.375" extentX="0.785" centerY="-0.04" centerX="0"/>
+				</object>
+			</object>
+			<object name="Masher2">
+				<transform y="1.898" x="0.163" sy="-1"/>
+				<object name="mask">
+					<transform y="1.653" sy="1.328048" sx="0.375"/>
+					<object name="Group 6">
+						<transform y="-0.882197" sy="0.752985" sx="2.666667"/>
+						<sprite units="190" frame="Group 6"/>
+					</object>
+				</object>
+				<object opponent="1" name="end">
+					<transform y="1.07"/>
+					<sprite units="190" frame="Group 7" flipY="1"/>
+					<box extentY="0.321053" extentX="1.126316" centerY="0" centerX="0"/>
+				</object>
+			</object>
+			<object name="Block2" hook="1">
+				<transform y="1.898" x="0.163" sy="-1"/>
+				<sprite units="190" frame="Group 8"/>
+				<object name="GameObject">
+					<transform y="-0.07" sy="-1"/>
+					<box extentY="0.375" extentX="0.785" centerY="-0.04" centerX="0"/>
+				</object>
+			</object>
+			<object offWin="1" name="trap_oto">
+				<transform y="-0.475905" x="-2.47"/>
+				<sprite units="190" frame="trap_oto" flipX="1"/>
+			</object>
+			<object name="Rope"/>
+			<object name="Hand">
+				<transform y="-0.635" x="-1.872" s="0.767483" r="1.317025"/>
+				<object rope="1" name="SpriteHand">
+					<transform x="-0.262" r="-1.214749"/>
+					<sprite units="190" pivotY="0.090205" pivotX="0.681032" frame="hand_open" flipX="1"/>
+				</object>
+				<object name="Cotay">
+					<transform x="-0.262"/>
+				</object>
+				<object name="Pos">
+					<transform y="-0.022" x="0.101"/>
+				</object>
+			</object>
+			<object name="Nv">
+				<object name="NVC">
+					<transform y="-0.599" x="-2.409" s="1.089469"/>
+					<skel type="thief" offWin="1" nv="1" loop="1" animName="t_35_1_be"/>
+				</object>
+				<object name="Win">
+					<object name="trap_oto (1)">
+						<transform y="-0.475905" x="1.14"/>
+						<sprite units="190" show="win" frame="trap_oto" flipX="1"/>
+						<object name="NVC (1)">
+							<transform y="-0.123095" x="0.086" s="1.089469"/>
+							<skel type="thief" showWin="1" loop="1" hide="1" animName="t_35_1_win"/>
+							<object showWin="1" name="happy" hide="1">
+								<transform y="-0.775673" x="-0.40977" s="0.917878"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object rope="0" name="Start]">
+				<transform y="-1.094" x="-2.256"/>
+			</object>
+			<object name="SttTarget">
+				<transform y="-1.5" x="-1.93"/>
+				<object name="bong_thoai">
+					<transform s="0.646324"/>
+					<sprite units="200" pivotY="0.986423" pivotX="0.817453" frame="bubble" flipX="1"/>
+					<object name="target (1)">
+						<transform y="-0.639" x="0.44" s="0.667046"/>
+						<sprite units="190" frame="bang_cong_tac"/>
+						<object name="target (2)">
+							<transform y="-0.121431"/>
+							<sprite units="190" frame="nut_tat"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="ObjectHint (4)">
+				<object name="New Game Object">
+					<transform y="-1.687" x="1.754"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-2.805225" x="0.956818"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-2.804632" x="-0.621705"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-1.094" x="-2.256"/>
+				</object>
+			</object>
+			<object name="View">
+				<transform y="-0.22" x="-0.06" sy="6.28188" sx="6"/>
+			</object>
+		</object>
+	</scene>
+</root>

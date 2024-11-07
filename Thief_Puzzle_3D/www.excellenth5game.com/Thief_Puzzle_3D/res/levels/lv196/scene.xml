@@ -1,0 +1,222 @@
+<root>
+	<anims/>
+	<scene>
+		<object name="lv196">
+			<object name="TrangTri">
+				<object name="BG_Troi (2)">
+					<transform y="-1.7264" x="-8.31" sy="0.442213" sx="0.691789"/>
+					<sprite units="100" frame="bf_troi"/>
+				</object>
+				<object name="BG_Troi (1)">
+					<transform y="-1.7264" x="8.31" sy="0.442213" sx="0.691789"/>
+					<sprite units="100" frame="bf_troi"/>
+				</object>
+				<object name="BG (1)">
+					<transform y="0.018" x="-8.28" sy="0.520333" sx="0.776555"/>
+					<sprite units="100" frame="bg"/>
+				</object>
+				<object name="BG (2)">
+					<transform y="0.018" x="8.35" sy="0.520333" sx="0.776555"/>
+					<sprite units="100" frame="bg"/>
+				</object>
+				<object name="BG">
+					<transform y="0.018" sy="0.520333" sx="0.776555"/>
+					<sprite units="100" frame="bg"/>
+				</object>
+				<object name="BG_Troi">
+					<transform y="-1.7264" x="-0.0113" sy="0.442213" sx="0.691789"/>
+					<sprite units="100" frame="bf_troi"/>
+				</object>
+				<object name="Giuong">
+					<transform y="2.4488" x="-0.8619" sy="0.984672" sx="-0.988062"/>
+					<sprite units="190" frame="Giuong"/>
+				</object>
+				<object name="KimCuong_Win">
+					<transform y="-1.676" x="1.024" r="-0.125664"/>
+					<sprite units="190" show="win" frame="item_vong_kim_cuong"/>
+				</object>
+				<object name="KimCuong_Lose">
+					<transform y="1.749" x="-1.079" r="-0.125664"/>
+					<sprite units="190" show="over" frame="item_vong_kim_cuong"/>
+				</object>
+			</object>
+			<object name="Nv">
+				<object offPosClose2="1" name="NVC">
+					<transform y="-0.812" x="0.532" sy="1.060494" sx="1.05682"/>
+					<skel type="thief" offWin="1" offClose="1" nv="1" loop="1" animName="t_196_1_be"/>
+				</object>
+				<object opponent="1" offPosClose2="1" name="NVP">
+					<transform y="2.163" x="-0.586" sy="0.875802" sx="0.873409"/>
+					<skel type="thief" offWin="1" offClose="1" nv="2" loop="1" animName="t_196_2_be"/>
+					<capsule radius="0.277273" height="0.556066" centerY="-0.150737" centerX="-1.34785" axis="x"/>
+				</object>
+				<object name="NVC_Win">
+					<transform y="-0.806" x="0.57" sy="1.049233" sx="1.053709"/>
+					<skel type="thief" showWin="1" loop="1" hide="1" animName="t_196_1_win"/>
+					<object showWin="1" name="love" hide="1">
+						<transform y="-0.728" x="-0.541"/>
+					</object>
+				</object>
+				<object name="NVP_Win">
+					<transform y="2.1452" x="-0.387" sy="0.937884" sx="0.935092"/>
+					<skel type="thief" showWin="1" loop="1" hide="1" animName="t_196_2_win"/>
+				</object>
+				<object name="NVC_Lose">
+					<transform y="-0.828" x="0.479" sy="1.070878" sx="1.081496"/>
+					<skel type="thief" showOver="1" loop="1" hide="1" animName="t_196_1_lose"/>
+				</object>
+				<object name="NVP_Lose">
+					<transform y="2.291" x="-0.716" sy="0.941459" sx="0.945461"/>
+					<skel type="thief" showOver="1" loop="1" hide="1" animName="t_196_2_lose"/>
+				</object>
+				<object showPosClose2="1" name="NVC_Lose2">
+					<transform y="-0.821" x="0.518" sy="0.956572" sx="0.943562"/>
+					<skel type="thief" loop="1" hide="1" animName="t_196_1_lose_2"/>
+				</object>
+				<object showPosClose2="1" name="NVP_Lose2">
+					<transform y="2.159" x="-0.603" sy="0.878565" sx="0.865347"/>
+					<skel type="thief" loop="1" hide="1" animName="t_196_2_be"/>
+				</object>
+			</object>
+			<object offWin="1" offClose="1" name="target">
+				<transform y="2.119" x="-1.332" r="-1.466426"/>
+				<box extentY="0.143198" extentX="0.138546" centerY="0.000443" centerX="-0.014628"/>
+				<sprite units="190" frame="item_vong_kim_cuong"/>
+			</object>
+			<object name="Rope"/>
+			<object name="Hand">
+				<transform y="-0.735" x="0.827" s="0.71586" r="1.094496"/>
+				<object name="SpriteHand">
+					<transform x="-0.262" r="-1.268331"/>
+					<sprite units="190" pivotY="0.090205" pivotX="0.681032" frame="hand_open" flipX="1"/>
+				</object>
+				<object rope="1" name="Cotay">
+					<transform x="-0.262"/>
+				</object>
+				<object name="Pos">
+					<transform y="0.01" x="0.11"/>
+				</object>
+			</object>
+			<object rope="0" name="Start" delete="1">
+				<transform y="-1.036" x="0.517"/>
+			</object>
+			<object name="ObjectHint">
+				<object name="GameObject">
+					<transform y="-1.04" x="0.512"/>
+				</object>
+				<object name="GameObject (1)">
+					<transform y="2.12" x="-1.32"/>
+				</object>
+			</object>
+			<object name="SttTarget">
+				<transform y="-1.51" x="0.89"/>
+				<object name="bong_thoai">
+					<transform s="0.72058"/>
+					<sprite units="200" pivotY="0.986423" pivotX="0.817453" frame="bubble" flipX="1"/>
+					<object name="target (1)">
+						<transform y="-0.586" x="0.424" sy="1.142098" sx="-1.142098"/>
+						<sprite units="190" frame="item_vong_kim_cuong"/>
+					</object>
+				</object>
+			</object>
+			<object name="View">
+				<transform y="0.04" x="0.01" sy="6.087634" sx="5.55"/>
+			</object>
+			<object name="GameObject">
+				<object name="Masher">
+					<transform y="-0.01" x="1.098" sy="0.59237" sx="-2.817513"/>
+					<mask width="4" units="4" height="4" frame="Square"/>
+					<object name="lo_xo">
+						<transform x="-0.344" sy="1.282051" sx="-0.288184"/>
+						<object opponent="2" name="tay_dam">
+							<transform x="-2.34" s="0.839382"/>
+							<sprite units="190" frame="may_nghien_1"/>
+							<box extentY="0.360526" extentX="0.213158" centerY="-0" centerX="0"/>
+						</object>
+						<object name="Rectangle 20">
+							<transform x="-0.92" sy="0.92929" sx="1.097724"/>
+							<sprite units="190" frame="lo_xo_may_nghien copy"/>
+						</object>
+					</object>
+				</object>
+				<object opponent="1" name="Block">
+					<transform y="-0.01" x="2.436" sy="0.63" sx="0.66938"/>
+					<sprite units="190" frame="may_nghien_1"/>
+					<box extentY="0.360526" extentX="0.213158" centerY="-0" centerX="0"/>
+				</object>
+			</object>
+			<object name="GameObject (1)">
+				<transform y="0.786"/>
+				<object name="Masher">
+					<transform y="-0.01" x="1.098" sy="0.59237" sx="-2.817513"/>
+					<mask width="4" units="4" height="4" frame="Square"/>
+					<object name="lo_xo">
+						<transform x="-0.344" sy="1.282051" sx="-0.288184"/>
+						<object opponent="2" name="tay_dam">
+							<transform x="-2.34" s="0.839382"/>
+							<sprite units="190" frame="may_nghien_1"/>
+							<box extentY="0.360526" extentX="0.213158" centerY="-0" centerX="0"/>
+						</object>
+						<object name="Rectangle 20">
+							<transform x="-0.92" sy="0.92929" sx="1.097724"/>
+							<sprite units="190" frame="lo_xo_may_nghien copy"/>
+						</object>
+					</object>
+				</object>
+				<object opponent="1" name="Block">
+					<transform y="-0.01" x="2.436" sy="0.63" sx="0.66938"/>
+					<sprite units="190" frame="may_nghien_1"/>
+					<box extentY="0.360526" extentX="0.213158" centerY="-0" centerX="0"/>
+				</object>
+			</object>
+			<object name="GameObject (2)">
+				<transform sx="-1"/>
+				<object name="Masher">
+					<transform y="-0.01" x="1.098" sy="0.59237" sx="-2.817513"/>
+					<mask width="4" units="4" height="4" frame="Square"/>
+					<object name="lo_xo">
+						<transform x="-0.344" sy="1.282051" sx="-0.288184"/>
+						<object opponent="2" name="tay_dam">
+							<transform x="-2.34" s="0.839382"/>
+							<sprite units="190" frame="may_nghien_1"/>
+							<box extentY="0.360526" extentX="0.213158" centerY="-0" centerX="0"/>
+						</object>
+						<object name="Rectangle 20">
+							<transform x="-0.92" sy="0.92929" sx="1.097724"/>
+							<sprite units="190" frame="lo_xo_may_nghien copy"/>
+						</object>
+					</object>
+				</object>
+				<object opponent="1" name="Block">
+					<transform y="-0.01" x="2.436" sy="0.63" sx="0.66938"/>
+					<sprite units="190" frame="may_nghien_1"/>
+					<box extentY="0.360526" extentX="0.213158" centerY="-0" centerX="0"/>
+				</object>
+			</object>
+			<object name="GameObject (3)">
+				<transform y="0.786" sx="-1"/>
+				<object name="Masher">
+					<transform y="-0.01" x="1.098" sy="0.59237" sx="-2.817513"/>
+					<mask width="4" units="4" height="4" frame="Square"/>
+					<object name="lo_xo">
+						<transform x="-0.344" sy="1.282051" sx="-0.288184"/>
+						<object opponent="2" name="tay_dam">
+							<transform x="-2.34" s="0.839382"/>
+							<sprite units="190" frame="may_nghien_1"/>
+							<box extentY="0.360526" extentX="0.213158" centerY="-0" centerX="0"/>
+						</object>
+						<object name="Rectangle 20">
+							<transform x="-0.92" sy="0.92929" sx="1.097724"/>
+							<sprite units="190" frame="lo_xo_may_nghien copy"/>
+						</object>
+					</object>
+				</object>
+				<object opponent="1" name="Block">
+					<transform y="-0.01" x="2.436" sy="0.63" sx="0.66938"/>
+					<sprite units="190" frame="may_nghien_1"/>
+					<box extentY="0.360526" extentX="0.213158" centerY="-0" centerX="0"/>
+				</object>
+			</object>
+		</object>
+	</scene>
+</root>

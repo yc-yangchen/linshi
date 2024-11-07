@@ -1,0 +1,135 @@
+<root>
+	<anims win2="t_217_2_win" lose1="t_217_1_lose"/>
+	<scene>
+		<object name="lv217">
+			<object name="TrangTri">
+				<object name="bg_san_khau">
+					<transform sx="34.96041"/>
+					<sprite units="190" frame="bg"/>
+				</object>
+				<object name="bg_san_khau (2)">
+					<transform y="0.77" x="-5.65"/>
+					<sprite units="190" frame="dai_phan_cach" flipX="1"/>
+				</object>
+				<object name="bg_san_khau (3)">
+					<transform y="0.77" x="5.64"/>
+					<sprite units="190" frame="dai_phan_cach" flipX="1"/>
+				</object>
+				<object name="bg_san_khau (1)">
+					<transform y="0.77"/>
+					<sprite units="190" frame="dai_phan_cach"/>
+				</object>
+			</object>
+			<object name="Nv">
+				<transform y="0.12"/>
+				<object name="NVC">
+					<transform y="2.666" x="0.268" s="0.977603"/>
+					<skel type="thief" offWin="1" nv="1" loop="1" animName="t_217_1_be"/>
+				</object>
+				<object opponent="1" name="NVC (1)">
+					<transform y="-0.415" x="-0.51" s="0.723583"/>
+					<skel type="thief" offClose="1" nv="2" loop="1" animName="t_217_2_be"/>
+					<capsule radius="0.283911" height="2.308613" centerY="-1.124869" centerX="0.06736" axis="y"/>
+					<object name="love" delete="1">
+						<transform y="-2.289993" x="-0.270874" s="1.382012"/>
+					</object>
+				</object>
+				<object name="Over">
+					<object name="NVC (2)">
+						<transform y="-0.415" x="1.19" s="0.723583"/>
+						<skel type="thief" showOver="1" loop="1" hide="1" animName="t_217_2_lose"/>
+						<object name="target (1)">
+							<transform y="-1.868" x="0.332" s="0.894322" r="-0.726406"/>
+							<sprite units="190" show="over" frame="banh_my" flipX="1"/>
+						</object>
+						<object showClose="1" name="happy" hide="1">
+							<transform y="-2.236891" x="-0.590539" s="1.432198"/>
+						</object>
+					</object>
+				</object>
+				<object name="win">
+					<object name="NVC (2)">
+						<transform y="2.666" x="1.599" s="0.977603"/>
+						<skel type="thief" showWin="1" loop="1" hide="1" animName="t_217_1_win"/>
+						<object name="target (1)">
+							<transform y="-1.1" x="0.58" s="0.661942" r="-0.726406"/>
+							<sprite units="190" show="win" frame="banh_my" flipX="1"/>
+						</object>
+						<object showWin="1" name="happy" hide="1">
+							<transform y="-2.118826" x="0.618104" s="1.060055"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="target" delete="1">
+				<transform y="-1.557" x="-0.18" s="0.647116" r="-0.726406"/>
+				<sprite units="190" frame="banh_my" flipX="1"/>
+				<capsule radius="0.207229" height="0.684211" centerY="0" centerX="-0.024984" axis="y"/>
+			</object>
+			<object name="Rope"/>
+			<object name="Hand">
+				<transform y="1.48" x="0.262" s="0.633833" r="0.181514"/>
+				<object rope="1" name="SpriteHand">
+					<transform x="-0.262" r="-1.804671"/>
+					<sprite units="190" pivotY="0.090205" pivotX="0.681032" frame="hand_open"/>
+				</object>
+				<object name="Cotay">
+					<transform x="-0.262"/>
+				</object>
+				<object name="Pos">
+					<transform y="-0.022" x="0.101"/>
+				</object>
+			</object>
+			<object rope="0" name="Start]">
+				<transform y="1.106" x="0.434"/>
+			</object>
+			<object name="SttTarget">
+				<transform y="0.72" x="0.16"/>
+				<object name="bong_thoai">
+					<transform s="0.669182"/>
+					<sprite units="200" pivotY="0.986423" pivotX="0.817453" frame="bubble"/>
+					<object name="target (1)">
+						<transform y="-0.6" x="-0.41" s="0.952296" r="1.386141"/>
+						<sprite units="190" frame="banh_my"/>
+					</object>
+					<object name="Layer 1">
+						<sprite units="200" pivotY="0.986423" pivotX="0.817453" frame="Layer 1"/>
+					</object>
+				</object>
+			</object>
+			<object name="ObjectHint (4)">
+				<object name="New Game Object">
+					<transform y="-1.561" x="-0.171"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="1.104" x="0.434"/>
+				</object>
+			</object>
+			<object opponent="1" name="SmokeTarget">
+				<transform y="-1.583" x="-0.175"/>
+				<circle radius="0.3" centerY="0" centerX="0"/>
+			</object>
+			<object name="Lamp">
+				<transform y="-1.605" x="-2.26"/>
+				<sprite units="190" frame="cot_den"/>
+			</object>
+			<object name="Lamp">
+				<transform y="-1.605" x="2.264001" sx="-1"/>
+				<sprite units="190" frame="cot_den"/>
+			</object>
+			<object name="Smoke">
+				<object name="Light_l">
+					<transform y="-0.335" x="-1.974" s="0.857175"/>
+					<sprite units="100" frame="anh_sang_rong"/>
+				</object>
+				<object name="Light_r">
+					<transform y="-0.335" x="1.978001" sy="0.857175" sx="-0.857175"/>
+					<sprite units="100" frame="anh_sang_rong"/>
+				</object>
+			</object>
+			<object name="View">
+				<transform sy="6.326442" sx="5.649611"/>
+			</object>
+		</object>
+	</scene>
+</root>

@@ -1,0 +1,169 @@
+<root>
+	<anims/>
+	<scene>
+		<object name="lv296">
+			<object name="TrangTri">
+				<object name="BG">
+					<transform y="-0.198" sy="0.516605" sx="89.734886"/>
+					<sprite units="100" frame="bg"/>
+				</object>
+				<object name="Tru">
+					<transform y="-2.2929" x="0.0046" sy="0.51131" sx="0.509976"/>
+					<sprite units="100" frame="be_kim_cuong"/>
+				</object>
+				<object name="Kim_cuong_win">
+					<transform y="1.537" x="2.391" sy="1.036913" sx="1.024388"/>
+					<sprite units="190" show="win" frame="item_kim_cuong"/>
+				</object>
+			</object>
+			<object offWin="1" name="target">
+				<transform y="-2.8532" x="-0.007" sy="1.036913" sx="1.024388"/>
+				<sprite units="190" frame="item_kim_cuong"/>
+				<capsule radius="0.181345" height="0.358308" centerY="-0.033307" centerX="-0.003621" axis="y"/>
+			</object>
+			<object opponent="1" name="Trap_chuong">
+				<transform y="-1.139" x="0.109" sy="0.457247" sx="0.477089"/>
+				<sprite units="100" frame="chuong"/>
+				<box extentY="0.340169" extentX="3.080203" centerY="0.013171" centerX="0.016605"/>
+			</object>
+			<object name="Diem_neo_tru_chuong" hook="1">
+				<transform y="-1.1746" x="-1.512" sy="0.530438" sx="0.509976"/>
+				<sprite units="100" frame="cot_chuong"/>
+				<object name="GameObject">
+					<transform y="0.0054" sy="1.494405" sx="0.326809"/>
+					<box/>
+				</object>
+			</object>
+			<object name="Diem_neo_tru_chuong" hook="1">
+				<transform y="-1.1746" x="1.766" sy="0.530438" sx="0.509976"/>
+				<sprite units="100" frame="cot_chuong"/>
+				<object name="GameObject (1)">
+					<transform y="0.0054" sy="1.494405" sx="0.326809"/>
+					<box/>
+				</object>
+			</object>
+			<object name="Rope"/>
+			<object name="Trap_cua" hook="1">
+				<transform y="0.6249" x="0.0043" s="0.528152"/>
+				<sprite units="100" frame="cong"/>
+				<object opponent="2" name="Trap_cua (1)">
+					<transform x="12.620805" sx="11.933385"/>
+					<sprite units="100" frame="cong_ext"/>
+				</object>
+				<object opponent="2" name="Trap_cua (2)">
+					<transform x="-13.716324" sx="11.933385"/>
+					<sprite units="100" frame="cong_ext"/>
+				</object>
+				<object name="Diem_neo">
+					<transform y="0.448" x="-2.3437" sy="2.403926" sx="0.912659"/>
+					<box/>
+				</object>
+				<object name="Diem_neo (1)">
+					<transform y="0.448" x="2.376" sy="2.403926" sx="0.912659"/>
+					<box/>
+				</object>
+				<object name="Diem_neo (3)">
+					<transform y="-0.2912" x="-10.46" sy="2.76818" sx="15.30573"/>
+					<box/>
+				</object>
+				<object name="Diem_neo (4)">
+					<transform y="-0.2912" x="10.56" sy="2.76818" sx="15.304057"/>
+					<box/>
+				</object>
+			</object>
+			<object name="Door">
+				<transform y="1.159197" x="0.0043" sy="0.985276" sx="2.128204"/>
+				<mask width="4" units="4" height="4" frame="Square"/>
+				<object opponent="1" name="door" delete="1">
+					<transform y="-0.122953" sy="0.44796" sx="0.222702"/>
+					<sprite units="100" frame="cua_dong"/>
+					<box extentY="0.848872" extentX="2.114652" centerY="0" centerX="-0"/>
+				</object>
+				<object name="t">
+					<transform y="-0.881074" sy="0.44796" sx="0.222702"/>
+				</object>
+				<object name="b">
+					<transform y="-0.122953" sy="0.44796" sx="0.222702"/>
+				</object>
+				<object offWin="1" name="switch">
+					<transform y="-0.250738" x="0.593369" sy="0.536913" sx="0.248168"/>
+					<sprite units="100" frame="nut_do"/>
+				</object>
+			</object>
+			<object name="Nv">
+				<object name="NVC">
+					<transform y="2.922" x="1.936" sy="0.813444" sx="0.793182"/>
+					<skel type="thief" offWin="1" offClose="1" nv="1" loop="1" animName="t_296_1_be"/>
+					<object name="happy" delete="1">
+						<transform y="-2.003" x="0.506"/>
+					</object>
+				</object>
+				<object name="NVC_Win">
+					<transform y="3.266" x="1.517" sy="1.003468" sx="0.963554"/>
+					<skel type="thief" showWin="1" loop="1" hide="1" animName="t_296_1_win"/>
+					<object showWin="1" name="happy" hide="1">
+						<transform y="-2.102" x="-0.247"/>
+					</object>
+				</object>
+				<object name="NVC_Lose">
+					<transform y="2.994" x="1.138" sy="0.960414" sx="0.912174"/>
+					<skel type="thief" showOver="1" loop="1" hide="1" animName="t_296_1_lose"/>
+				</object>
+				<object name="NVP_Lose">
+					<transform y="2.898" x="0.434" sy="0.859068" sx="0.843349"/>
+					<skel type="thief" showOver="1" loop="1" hide="1" animName="t_296_2_lose"/>
+				</object>
+			</object>
+			<object name="Hand">
+				<transform y="1.94" x="1.52" s="0.71586" r="2.633702"/>
+				<object name="SpriteHand">
+					<transform x="-0.262" r="-1.839577"/>
+					<sprite units="190" pivotY="0.090205" pivotX="0.681032" frame="hand_open"/>
+				</object>
+				<object rope="1" name="Cotay">
+					<transform x="-0.262"/>
+				</object>
+				<object name="Pos">
+					<transform y="-0.02" x="0.06"/>
+				</object>
+			</object>
+			<object rope="0" name="Start" delete="1">
+				<transform y="1.48" x="1.815"/>
+			</object>
+			<object name="SttTarget">
+				<transform y="1.025" x="1.525"/>
+				<object name="bong_thoai">
+					<transform s="0.72058"/>
+					<sprite units="200" pivotY="0.986423" pivotX="0.817453" frame="bubble" flipX="1"/>
+					<object name="target (1)">
+						<transform y="-0.615" x="0.425" s="0.939127"/>
+						<sprite units="190" frame="item_kim_cuong"/>
+					</object>
+				</object>
+			</object>
+			<object name="Pos1">
+				<transform y="1.473" x="-5.01" s="0.612338"/>
+			</object>
+			<object name="Pos2">
+				<transform y="1.473" x="5" s="0.612338"/>
+			</object>
+			<object name="ObjectHint">
+				<object name="New Game Object">
+					<transform y="-2.87" x="-0.067"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-1.568255" x="-1.596317"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-0.774404" x="-1.595494"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="1.48" x="1.312"/>
+				</object>
+			</object>
+			<object name="View">
+				<transform y="-0.38" x="-0.06" sy="5.592351" sx="5.325"/>
+			</object>
+		</object>
+	</scene>
+</root>

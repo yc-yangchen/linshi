@@ -1,0 +1,166 @@
+<root>
+	<anims win1="t_129_1_win" lose1="t_129_1_lose"/>
+	<scene>
+		<object name="lv129">
+			<object name="TrangTri">
+				<object name="bg">
+					<transform y="-2.27" x="0.014" sy="13.615609" sx="1.753499"/>
+					<sprite units="100" frame="bg"/>
+				</object>
+				<object name="BG_Bien (2)">
+					<transform y="2.450399" x="7.93" sy="0.995921" sx="1.513526"/>
+					<sprite units="190" frame="bien" flipX="1"/>
+				</object>
+				<object name="BG_Bien (1)">
+					<transform y="2.450399" x="-7.92" sy="0.995921" sx="1.513526"/>
+					<sprite units="190" frame="bien" flipX="1"/>
+				</object>
+				<object name="BG_Bien">
+					<transform y="2.4504" x="0.007" sy="0.995921" sx="1.513526"/>
+					<sprite units="190" frame="bien"/>
+				</object>
+				<object name="MomDat">
+					<transform y="2.25" x="1.5" sy="0.522863" sx="0.518933"/>
+					<sprite units="100" frame="dat"/>
+				</object>
+				<object name="HaiDang">
+					<transform y="-0.636" x="1.559" sy="0.474572" sx="0.473518"/>
+					<sprite units="100" frame="hai_dang"/>
+				</object>
+				<object name="Phao">
+					<transform y="2.067" x="0.711" sy="0.976367" sx="0.974197"/>
+					<sprite units="190" frame="diem_neo_phao"/>
+				</object>
+			</object>
+			<object offWin="1" name="target">
+				<transform y="2.317" x="-1.11" s="0.516959"/>
+				<box extentY="0.556865" extentX="0.628477" centerY="-0.773225" centerX="-0.304077"/>
+				<object name="Nvp">
+					<transform s="1.810633"/>
+					<skel type="girl" offWin="1" offClose="1" loop="1" animName="t_129_1_be"/>
+				</object>
+				<object name="Nvp (1)">
+					<transform y="1.57" x="-0.06" s="1.502825"/>
+					<skel type="girl" loop="1" hide="1" animName="t_129_1_win"/>
+				</object>
+			</object>
+			<object name="Nv">
+				<object name="NvC">
+					<transform y="-1.833" x="1.589" sy="0.543058" sx="-0.543058"/>
+					<skel type="thief" nv="1" loop="1" animName="t_129_1_be"/>
+					<object showWin="1" name="love" hide="1">
+						<transform y="-2.235831" x="-0.152158" sy="1.841423" sx="-1.841423"/>
+					</object>
+				</object>
+				<object name="Nvp_Win">
+					<transform y="-1.856" x="0.945" s="0.872556"/>
+					<skel type="girl" showWin="1" loop="1" hide="1" animName="t_129_1_win"/>
+				</object>
+				<object name="Nvp_Lose">
+					<transform y="1.943" x="-1.045" s="0.872556"/>
+					<skel type="girl" showOver="1" loop="1" hide="1" animName="t_129_1_lose"/>
+				</object>
+			</object>
+			<object name="LanCan">
+				<transform y="-1.9828" x="1.5365" sy="0.519577" sx="0.521154"/>
+				<sprite units="100" frame="lan_can"/>
+			</object>
+			<object name="Rope"/>
+			<object name="Hand">
+				<transform y="-2.422" x="1.847" s="0.5" r="1.293289"/>
+				<object name="SpriteHand">
+					<transform y="-0.015" x="-0.271" r="1.919862"/>
+					<sprite units="190" pivotY="0.090205" pivotX="0.681032" frame="hand_open" flipY="1"/>
+				</object>
+				<object rope="1" name="Cotay">
+					<transform y="-0.015" x="-0.271" r="1.874484"/>
+				</object>
+				<object name="Pos">
+					<transform y="0.049" x="0.03"/>
+				</object>
+			</object>
+			<object rope="0" name="Start" delete="1">
+				<transform y="-2.7203" x="1.6054"/>
+			</object>
+			<object name="SttTarget">
+				<transform y="-2.684" x="1.239"/>
+				<object name="bong_thoai">
+					<transform y="-0.088" x="0.07" s="0.63457"/>
+					<sprite units="200" pivotY="0.986423" pivotX="0.817453" frame="bubble"/>
+					<object name="target (1)">
+						<transform y="-0.66" x="-0.42" s="0.175248"/>
+						<sprite units="100" frame="g_be_0"/>
+					</object>
+				</object>
+			</object>
+			<object name="trap_laze" hook="1">
+				<transform y="-1.298" x="2.114" r="-3.141593"/>
+				<sprite units="190" frame="trap_laze"/>
+				<object name="GameObject (13)">
+					<transform y="-0.006" x="-0.031" sy="0.407326" sx="0.202042" r="-3.141593"/>
+					<box/>
+				</object>
+			</object>
+			<object name="trap_laze (1)" hook="1">
+				<transform y="-0.421" x="1.002"/>
+				<sprite units="190" frame="trap_laze"/>
+				<object name="GameObject (14)">
+					<transform y="0.002" x="-0.034" sy="0.407326" sx="0.202042"/>
+					<box/>
+				</object>
+			</object>
+			<object name="trap_laze (2)" hook="1">
+				<transform y="0.54" x="2.114" r="-3.141593"/>
+				<sprite units="190" frame="trap_laze"/>
+				<object name="GameObject (13)">
+					<transform y="-0.006" x="-0.031" sy="0.407326" sx="0.202042" r="-3.141593"/>
+					<box/>
+				</object>
+			</object>
+			<object opponent="1" name="trap_tu_dien">
+				<transform y="-1.294" x="-3.87" sx="2.88792" r="-3.141593"/>
+				<sprite units="190" frame="trap_tia_laze"/>
+				<box extentY="0.057895" extentX="2.029208" centerY="0" centerX="0.04"/>
+			</object>
+			<object opponent="1" name="trap_tu_dien">
+				<transform y="-0.435" x="5.143" sx="1.983079"/>
+				<sprite units="190" frame="trap_tia_laze"/>
+				<box extentY="0.057895" extentX="2.0357" centerY="0" centerX="0.07"/>
+			</object>
+			<object opponent="1" name="trap_tu_dien">
+				<transform y="0.544" x="-3.689" sx="2.789175" r="-3.141593"/>
+				<sprite units="190" frame="trap_tia_laze"/>
+				<box extentY="0.057895" extentX="2.029208" centerY="0" centerX="0.04"/>
+			</object>
+			<object name="ObjectHint">
+				<object name="New Game Object">
+					<transform y="2.317" x="-1.11"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="0.749828" x="2.247007"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="0.341357" x="2.246219"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-0.215265" x="0.873982"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-0.623648" x="0.874805"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-1.088211" x="2.247013"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-1.496387" x="2.24671"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-2.7203" x="1.6054"/>
+				</object>
+			</object>
+			<object name="View">
+				<transform y="-0.44" x="0.35" sy="6.127422" sx="4.899375"/>
+			</object>
+		</object>
+	</scene>
+</root>

@@ -1,0 +1,161 @@
+<root>
+	<anims/>
+	<scene>
+		<object name="lv397">
+			<object name="TrangTri">
+				<object name="BG (1)">
+					<transform y="-0.1" x="-5.68" sy="1.021182"/>
+					<sprite units="190" frame="bg" flipX="1"/>
+				</object>
+				<object name="BG (2)">
+					<transform y="-0.1" x="5.64" sy="1.021182"/>
+					<sprite units="190" frame="bg" flipX="1"/>
+				</object>
+				<object name="BG">
+					<transform y="-0.1" x="-0.0024" sy="1.021182"/>
+					<sprite units="190" frame="bg"/>
+				</object>
+			</object>
+			<object offWin="1" offPosClose2="1" offClose="1" name="Be"/>
+			<object offWin="1" name="target">
+				<transform y="1.762" x="-0.178" sy="0.527746" sx="0.512885"/>
+				<capsule radius="0.342666" height="0.764626" centerY="0.006649" centerX="0.020942" axis="x"/>
+				<sprite units="100" frame="cay nam"/>
+			</object>
+			<object name="Diem_neo_goc_cay" hook="1">
+				<transform y="-0.598" x="0.205" s="0.520009"/>
+				<sprite units="100" frame="goc_cay"/>
+				<object name="GameObject">
+					<transform y="-0.0307" x="-0.0301" sy="5.115218" sx="4.014706"/>
+					<circle radius="0.1"/>
+				</object>
+			</object>
+			<object opponent="1" name="trap_nam">
+				<transform y="1.221" x="-1.8034" s="0.436809"/>
+				<sprite units="100" frame="nam_doc"/>
+				<capsule radius="0.409603" height="0.874243" centerY="0" centerX="0.013755" axis="x"/>
+			</object>
+			<object opponent="1" name="trap_nam (1)">
+				<transform y="2.337" x="-1.49" s="0.436809"/>
+				<sprite units="100" frame="nam_doc"/>
+				<capsule radius="0.409603" height="0.874243" centerY="0" centerX="0.013755" axis="x"/>
+			</object>
+			<object opponent="1" name="trap_nam (2)">
+				<transform y="2.216" x="1.089" s="0.52652"/>
+				<sprite units="100" frame="nam_doc"/>
+				<capsule radius="0.409603" height="0.874243" centerY="0" centerX="0.013755" axis="x"/>
+			</object>
+			<object opponent="1" name="trap_nam (3)">
+				<transform y="0.164" x="1.144" s="0.458816"/>
+				<sprite units="100" frame="nam_doc"/>
+				<capsule radius="0.409603" height="0.874243" centerY="0" centerX="0.013755" axis="x"/>
+			</object>
+			<object opponent="1" name="trap_nam (4)">
+				<transform y="0.487" x="-0.536" s="0.458816"/>
+				<sprite units="100" frame="nam_doc"/>
+				<capsule radius="0.409603" height="0.874243" centerY="0" centerX="0.013755" axis="x"/>
+			</object>
+			<object name="Nv">
+				<object offPosClose2="1" name="Be" delete="1">
+					<object name="Gio">
+						<transform y="-0.851" x="-1.601" sy="0.412565" sx="0.404007"/>
+						<sprite units="100" frame="gio nam"/>
+					</object>
+					<object name="NVC">
+						<transform y="-0.198" x="-1.2365" sy="0.433106" sx="0.435471"/>
+						<skel type="thief" nv="1" loop="1" animName="t_397_1_be"/>
+					</object>
+				</object>
+				<object showWin="1" name="Win">
+					<object name="Gio (1)">
+						<transform y="-2.2509" x="-2.109" sy="0.452865" sx="0.45098"/>
+						<sprite units="100" hide="1" frame="gio nam1"/>
+					</object>
+					<object name="NVC (1)">
+						<transform y="-0.126" x="-1.45" sy="0.422567" sx="0.424199"/>
+						<skel type="thief" loop="1" hide="1" animName="t_397_1_win"/>
+						<object name="happy" hide="1">
+							<transform y="-5.79" x="-1.23" s="2"/>
+						</object>
+					</object>
+					<object name="target (1)">
+						<transform y="-2.716" x="-0.864" sy="0.527746" sx="0.512885" r="-0.293215"/>
+						<sprite units="100" hide="1" frame="cay nam"/>
+					</object>
+				</object>
+				<object showClose="1" name="Lose">
+					<object name="NVC (2)">
+						<transform y="-0.15" x="-0.71" sy="0.427133" sx="0.428783"/>
+						<skel type="thief" loop="1" hide="1" animName="t_397_1_lose"/>
+					</object>
+					<object name="Gio (2)">
+						<transform y="-0.0185" x="-1.5077" sy="0.413536" sx="0.410874"/>
+						<sprite units="100" hide="1" frame="gio nam1"/>
+					</object>
+					<object name="Gio (3)">
+						<transform y="0.008" x="-0.14" sy="0.514651" sx="0.511339" r="-2.020568"/>
+						<sprite units="100" hide="1" frame="nam_doc"/>
+					</object>
+				</object>
+				<object showPosClose2="1" name="Lose2">
+					<object name="NVC (2)">
+						<transform y="0.1125" x="-1.7209" s="0.334613"/>
+						<skel type="thief" loop="1" hide="1" animName="t_372_1_lose"/>
+					</object>
+					<object name="NVP (2)">
+						<transform y="1.261" x="1.022" s="0.332863"/>
+						<skel type="thief" loop="1" hide="1" animName="t_372_2_lose"/>
+					</object>
+				</object>
+			</object>
+			<object name="Rope"/>
+			<object name="Hand">
+				<transform y="-1.303" x="-0.807" s="0.586032" r="0.718029"/>
+				<object name="SpriteHand">
+					<transform x="-0.262" r="-1.172861"/>
+					<sprite units="190" pivotY="0.090205" pivotX="0.681032" frame="hand_open" flipX="1"/>
+				</object>
+				<object rope="1" name="Cotay">
+					<transform x="-0.262"/>
+				</object>
+				<object name="Pos">
+					<transform y="-0.02" x="0.06"/>
+				</object>
+			</object>
+			<object rope="0" name="Start" delete="1">
+				<transform y="-1.85" x="-1.297"/>
+			</object>
+			<object name="SttTarget">
+				<transform y="-2.391" x="-1.616"/>
+				<object name="bong_thoai">
+					<transform sy="0.72058" sx="-0.72058"/>
+					<sprite units="200" pivotY="0.986423" pivotX="0.817453" frame="bubble" flipX="1"/>
+					<object name="target (1)">
+						<transform y="-0.632" x="0.422" s="0.550438"/>
+						<sprite units="100" frame="cay nam"/>
+					</object>
+				</object>
+			</object>
+			<object name="ObjectHint">
+				<object name="New Game Object">
+					<transform y="1.65" x="-0.17"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-0.544084" x="0.359244"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-0.684359" x="0.359068"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-0.79769" x="0.294195"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-1.85" x="-1.297"/>
+				</object>
+			</object>
+			<object name="View">
+				<transform y="-0.34" sy="5.960179" sx="5.6875"/>
+			</object>
+		</object>
+	</scene>
+</root>

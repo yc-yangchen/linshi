@@ -1,0 +1,105 @@
+<root>
+	<anims win3="t_98_1_win" win2="t_98_2_win" win1="t_98_1_win" lose3="t_98_1_lose" lose2="t_98_2_lose" lose1="t_98_1_lose"/>
+	<scene>
+		<object name="lv98">
+			<object name="TrangTri">
+				<object name="bg (3)">
+					<transform y="-0.23" x="5.57" sy="2.221875" sx="2"/>
+					<sprite units="190" frame="bg_1" flipX="1"/>
+				</object>
+				<object name="bg (2)">
+					<transform y="-0.23" x="-5.57" sy="2.221875" sx="2"/>
+					<sprite units="190" frame="bg_1" flipX="1"/>
+				</object>
+				<object name="bg (1)">
+					<transform y="-0.23" sy="2.221875" sx="2"/>
+					<sprite units="190" frame="bg_1"/>
+				</object>
+			</object>
+			<object opponent="1" name="SmokeTarget">
+				<transform y="-2.12" x="1.71"/>
+				<circle radius="0.47" centerY="0" centerX="0"/>
+			</object>
+			<object offWin="1" name="target">
+				<transform y="-2.12" x="1.71"/>
+				<sprite units="190" frame="moon"/>
+				<circle radius="0.421053" centerY="0" centerX="0"/>
+			</object>
+			<object name="Rope"/>
+			<object name="Hand">
+				<transform y="-0.276" x="-1.052" s="0.71997" r="1.253146"/>
+				<object name="SpriteHand">
+					<transform x="-0.262" r="-1.310742"/>
+					<sprite units="190" pivotY="0.090205" pivotX="0.681032" frame="hand_open" flipX="1"/>
+				</object>
+				<object rope="1" name="Cotay">
+					<transform x="-0.262"/>
+				</object>
+				<object name="Pos">
+					<transform y="-0.022" x="0.101"/>
+				</object>
+			</object>
+			<object name="Nv">
+				<transform y="0.029" x="-0.014"/>
+				<object name="NVC">
+					<transform y="0.65" x="-1.39" s="0.839987"/>
+					<skel type="thief" nv="1" loop="1" animName="t_98_1_be"/>
+					<object name="target (1)">
+						<transform y="-1.133" x="-0.624"/>
+						<sprite units="190" show="win" frame="moon"/>
+					</object>
+					<object showWin="1" name="happy (1)">
+						<transform y="-2.25" x="-0.456" s="1.233726"/>
+					</object>
+				</object>
+			</object>
+			<object name="Smoke">
+				<transform y="1" x="-2.41" s="0.730974"/>
+				<sprite units="190" frame="may_nha_khoi"/>
+				<object opponent="1" name="trap_luong_bang">
+					<transform y="-0.75" x="3.85" s="1.600611"/>
+					<sprite units="190" frame="trap_khoi" flipX="1"/>
+				</object>
+			</object>
+			<object opponent="1" name="NVC (1)">
+				<transform y="2.177" x="0.679" s="1.107354"/>
+				<skel type="thief" nv="2" loop="1" animName="t_98_2_be"/>
+				<object name="happy_1" delete="1">
+					<transform y="-1.281994" x="0.152796" s="0.935847"/>
+				</object>
+				<object offWin="1" name="love">
+					<transform y="-1.341" x="0.418" s="0.903054"/>
+				</object>
+			</object>
+			<object name="NVN">
+				<transform y="1.979" x="1.516" s="1.6802"/>
+				<skel type="girl" nv="3" loop="1" animName="t_98_1_be"/>
+			</object>
+			<object rope="0" name="Start]">
+				<transform y="-0.794" x="-1.359"/>
+			</object>
+			<object name="SttTarget">
+				<transform y="-1.06" x="-1.66"/>
+				<object name="bong_thoai">
+					<transform s="0.755097"/>
+					<sprite units="200" pivotY="0.986423" pivotX="0.817453" frame="bubble"/>
+					<object name="target (1)">
+						<transform y="-0.67" x="-0.39" s="0.68936"/>
+						<sprite units="190" frame="moon"/>
+					</object>
+				</object>
+			</object>
+			<object name="ObjectHint (1)">
+				<object name="New Game Object">
+					<transform y="-0.794" x="-1.359"/>
+				</object>
+				<object name="New Game Object">
+					<transform y="-2.09" x="1.71"/>
+				</object>
+			</object>
+			<object name="View">
+				<transform y="-0.23" x="-0.06" sy="6.007496" sx="6"/>
+			</object>
+		</object>
+	</scene>
+</root>
